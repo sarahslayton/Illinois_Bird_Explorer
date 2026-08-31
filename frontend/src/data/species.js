@@ -4,6 +4,14 @@ import rows from '../../species_account_files/full_bird_list_photos.csv'
 // data that isn't listed here is appended alphabetically.
 const STATUS_ORDER = ['Migrant', 'Breeder', 'Winter', 'Resident', 'Vagrant', 'Introduced', 'Extirpated']
 
+// Canonical spellings — the CSV occasionally has a casing slip (e.g. "migrant").
+const CANON_STATUS = [
+  'Migrant', 'Breeder', 'Winter', 'Resident', 'Vagrant', 'Introduced', 'Extirpated',
+  'Rare Breeder', 'Rare Migrant', 'Rare Winter',
+]
+const canonStatus = (s) =>
+  CANON_STATUS.find((c) => c.toLowerCase() === s.toLowerCase()) || s
+
 // "Rare Breeder" is filtered under the "Breeder" button; the card keeps the
 // full label. Strip a leading "Rare " to get the button a status belongs to.
 const baseStatus = (status) => status.replace(/^Rare\s+/i, '').trim()
@@ -18,18 +26,27 @@ function toSpecies(row) {
     slug: row.Slug,
     photo: row.Slug,
     attribution: row.Photo_attribution,
-    statuses: [row.Status1, row.Status2, row.Status3, row.Status4].filter(Boolean),
+    statuses: [row.Status1, row.Status2, row.Status3, row.Status4]
+      .map((s) => (s || '').trim())
+      .filter(Boolean)
+      .map(canonStatus),
     stateList: row.State_list, // '' | 'Endangered' | 'Threatened'
+    // A "full" species has a photo and a written account: real card, clickable,
+    // detail page. Everything else shows as a non-clickable placeholder card.
+    full: row.Has_photo === 'Y' && row.Has_species_account === 'Y',
   }
 }
 
+// Directory listing: every full species, plus every other species that isn't a
+// vagrant (shown as a placeholder until it has a photo and an account).
 export const SPECIES = rows
-  .filter((r) => r.Has_photo === 'Y' && r.Has_species_account === 'Y')
   .map(toSpecies)
+  .filter((s) => s.full || !s.statuses.includes('Vagrant'))
   .sort((a, b) => a.common.localeCompare(b.common))
 
+// Detail pages exist only for full species.
 export function getSpeciesBySlug(slug) {
-  return SPECIES.find((s) => s.slug === slug) || null
+  return SPECIES.find((s) => s.slug === slug && s.full) || null
 }
 
 // Filter buttons, derived from the statuses present in SPECIES so the bar grows

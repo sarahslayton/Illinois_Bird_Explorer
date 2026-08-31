@@ -673,6 +673,9 @@ ilw-header {
 
 /* Species card */
 .species-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
   background: var(--white);
   border-radius: 3px;
   overflow: hidden;
@@ -692,6 +695,7 @@ ilw-header {
 }
 
 .species-card__photo-wrap {
+  position: relative;
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -707,6 +711,40 @@ ilw-header {
 .species-card:hover .species-card__photo { transform: scale(1.04); }
 .species-card__photo--missing {
   opacity: 0;
+}
+
+/* Placeholder card — species with no photo/account yet. Not a link. */
+.species-card--placeholder {
+  cursor: default;
+}
+.species-card--placeholder:hover {
+  transform: none;
+  box-shadow:
+    0 1px 2px  rgba(19, 41, 75, 0.06),
+    0 4px 12px rgba(19, 41, 75, 0.08);
+}
+.species-card__silhouette {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 14% 16%;
+  opacity: 0.6;
+  display: block;
+}
+.species-card__coming-soon {
+  position: absolute;
+  left: 50%;
+  bottom: var(--sp-2);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--gray-dark);
+  background: rgba(255, 255, 255, 0.78);
+  padding: 2px 7px;
+  border-radius: 2px;
 }
 
 .species-card__body {
@@ -1227,6 +1265,98 @@ ilw-header {
   color: var(--gray-dark);
   margin: 0;
   max-width: 75ch;
+}
+.resource-page__intro {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: var(--sp-4) 0 0;
+  max-width: 60ch;
+}
+
+/* Rendered Markdown body */
+.content-prose {
+  max-width: 72ch;
+  font-family: var(--font-body);
+  color: var(--gray-dark);
+}
+.content-prose > :first-child { margin-top: 0; }
+.content-prose > :last-child { margin-bottom: 0; }
+.content-prose p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin: 0 0 var(--sp-5);
+}
+.content-prose h2 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+  margin: var(--sp-10) 0 var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 2px solid rgba(19, 41, 75, 0.1);
+}
+.content-prose h3 {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: var(--sp-8) 0 var(--sp-3);
+}
+.content-prose ul,
+.content-prose ol {
+  margin: 0 0 var(--sp-5);
+  padding-left: var(--sp-6);
+}
+.content-prose li {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: var(--sp-2);
+}
+.content-prose a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+.content-prose a:hover { color: var(--blue-deep); }
+.content-prose a:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.content-prose strong { font-weight: 700; color: var(--navy); }
+.content-prose blockquote {
+  margin: 0 0 var(--sp-5);
+  padding: var(--sp-2) 0 var(--sp-2) var(--sp-5);
+  border-left: 3px solid var(--orange);
+  color: var(--gray-dark);
+  font-style: italic;
+}
+.content-prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  background: rgba(19, 41, 75, 0.06);
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+.content-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 var(--sp-5);
+  font-size: 0.95rem;
+}
+.content-prose th,
+.content-prose td {
+  text-align: left;
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--border);
+}
+.content-prose th {
+  font-family: var(--font-heading);
+  color: var(--navy);
 }
 
 /* Resource link cards */

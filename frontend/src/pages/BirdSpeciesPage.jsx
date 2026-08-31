@@ -2,6 +2,58 @@ import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { SPECIES, SPECIES_FILTERS, matchesFilter, statusModifier } from '../data/species'
 
+function CardInner({ s }) {
+  return (
+    <>
+      <div className="species-card__photo-wrap">
+        {s.full ? (
+          <img
+            className="species-card__photo"
+            src={`/species_photos/thumb/${s.photo}.webp`}
+            alt={s.common}
+            loading="lazy"
+            onError={(e) => {
+              const img = e.currentTarget
+              if (!img.dataset.fallback) {
+                img.dataset.fallback = '1'
+                img.src = `/species_photos/${s.photo}.webp`
+              } else {
+                img.classList.add('species-card__photo--missing')
+              }
+            }}
+          />
+        ) : (
+          <>
+            <img
+              className="species-card__silhouette"
+              src="/species_photos/placeholder_bird.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span className="species-card__coming-soon">Species Account Coming Soon!</span>
+          </>
+        )}
+      </div>
+      <div className="species-card__body">
+        <p className="species-card__common">{s.common}</p>
+        <p className="species-card__scientific">{s.scientific}</p>
+        <div className="species-card__badges">
+          {s.statuses.map((st) => (
+            <span key={st} className={`species-badge species-badge--${statusModifier(st)}`}>
+              {st}
+            </span>
+          ))}
+          {s.stateList && (
+            <span className={`species-badge species-badge--${s.stateList.toLowerCase()}`}>
+              IL {s.stateList}
+            </span>
+          )}
+        </div>
+      </div>
+    </>
+  )
+}
+
 export default function BirdSpeciesPage() {
   const [query, setQuery]               = useState('')
   const [statusFilter, setStatusFilter] = useState('all')
@@ -76,41 +128,15 @@ export default function BirdSpeciesPage() {
             <ul className="species-grid">
               {filtered.map((s) => (
                 <li key={s.slug}>
-                  <Link to={`/bird-species/${s.slug}`} className="species-card">
-                    <div className="species-card__photo-wrap">
-                      <img
-                        className="species-card__photo"
-                        src={`/species_photos/thumb/${s.photo}.webp`}
-                        alt={s.common}
-                        loading="lazy"
-                        onError={(e) => {
-                          const img = e.currentTarget
-                          if (!img.dataset.fallback) {
-                            img.dataset.fallback = '1'
-                            img.src = `/species_photos/${s.photo}.webp`
-                          } else {
-                            img.classList.add('species-card__photo--missing')
-                          }
-                        }}
-                      />
+                  {s.full ? (
+                    <Link to={`/bird-species/${s.slug}`} className="species-card">
+                      <CardInner s={s} />
+                    </Link>
+                  ) : (
+                    <div className="species-card species-card--placeholder">
+                      <CardInner s={s} />
                     </div>
-                    <div className="species-card__body">
-                      <p className="species-card__common">{s.common}</p>
-                      <p className="species-card__scientific">{s.scientific}</p>
-                      <div className="species-card__badges">
-                        {s.statuses.map((st) => (
-                          <span key={st} className={`species-badge species-badge--${statusModifier(st)}`}>
-                            {st}
-                          </span>
-                        ))}
-                        {s.stateList && (
-                          <span className={`species-badge species-badge--${s.stateList.toLowerCase()}`}>
-                            IL {s.stateList}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -17,12 +17,7 @@ function Prose({ paragraphs }) {
 }
 
 function Placeholder({ children }) {
-  return (
-    <>
-      <span className="placeholder-label">Placeholder text</span>
-      <div className="species-placeholder-box">{children}</div>
-    </>
-  )
+  return <div className="species-placeholder-box">{children}</div>
 }
 
 function FactsGrid({ facts }) {
@@ -121,7 +116,7 @@ export default function SpeciesDetailPage({ tab }) {
   if (!species) {
     return (
       <div className="species-overview__not-found">
-        <p>Species not found.</p>
+        <p>This species account isn’t available yet.</p>
         <Link to="/bird-species">← Back to Species Accounts</Link>
       </div>
     )
