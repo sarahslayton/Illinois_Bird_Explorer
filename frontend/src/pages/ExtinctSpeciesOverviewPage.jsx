@@ -74,11 +74,11 @@ export default function ExtinctSpeciesOverviewPage() {
           <div className="species-overview__life-history">
             <h2 className="species-overview__section-heading">Species Facts</h2>
             <span className="placeholder-label">Placeholder text</span>
-            <dl className="life-history-grid">
+            <dl className="species-facts-grid">
               {FACTS.map(({ label, key }) => (
-                <div key={key} className="life-history-item">
-                  <dt className="life-history-item__label">{label}</dt>
-                  <dd className="life-history-item__value">{bird[key]}</dd>
+                <div key={key} className="species-fact">
+                  <dt className="species-fact__label">{label}</dt>
+                  <dd className="species-fact__value">{bird[key]}</dd>
                 </div>
               ))}
             </dl>

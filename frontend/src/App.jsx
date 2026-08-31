@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 import HomePage from './pages/HomePage'
 import BirdSpeciesPage from './pages/BirdSpeciesPage'
-import SpeciesOverviewPage from './pages/SpeciesOverviewPage'
+import SpeciesDetailPage from './pages/SpeciesDetailPage'
 import MigrationResourcePage from './pages/MigrationResourcePage'
 import MonitoringResourcePage from './pages/MonitoringResourcePage'
 import ConservationEndangeredPage from './pages/ConservationEndangeredPage'
@@ -39,7 +39,9 @@ function AppLayout() {
         <Routes>
           <Route path="/"              element={<HomePage />} />
           <Route path="/bird-species"              element={<BirdSpeciesPage />} />
-          <Route path="/bird-species/:slug"        element={<SpeciesOverviewPage />} />
+          <Route path="/bird-species/:slug"            element={<SpeciesDetailPage tab="overview" />} />
+          <Route path="/bird-species/:slug/phenology"  element={<SpeciesDetailPage tab="phenology" />} />
+          <Route path="/bird-species/:slug/trends"     element={<SpeciesDetailPage tab="trends" />} />
           <Route path="/migration/:slug"      element={<MigrationResourcePage />} />
           <Route path="/monitoring/:slug"     element={<MonitoringResourcePage />} />
           <Route path="/conservation/endangered-species"      element={<ConservationEndangeredPage />} />
