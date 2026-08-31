@@ -1,16 +1,9 @@
 import { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { SPECIES } from '../data/species'
-
-const STATUS_FILTERS = [
-  { value: 'all',        label: 'All Species' },
-  { value: 'breeder',    label: 'Breeders' },
-  { value: 'migrant',    label: 'Migrants' },
-  { value: 'endangered', label: 'State Endangered' },
-]
+import { SPECIES, SPECIES_FILTERS, matchesFilter, statusModifier } from '../data/species'
 
 export default function BirdSpeciesPage() {
-  const [query, setQuery]             = useState('')
+  const [query, setQuery]               = useState('')
   const [statusFilter, setStatusFilter] = useState('all')
 
   const filtered = useMemo(() => {
@@ -21,13 +14,7 @@ export default function BirdSpeciesPage() {
         s.common.toLowerCase().includes(q) ||
         s.scientific.toLowerCase().includes(q)
 
-      const matchesStatus =
-        statusFilter === 'all' ||
-        (statusFilter === 'endangered'
-          ? s.stateList === 'Endangered'
-          : s.status === statusFilter)
-
-      return matchesQuery && matchesStatus
+      return matchesQuery && matchesFilter(s, statusFilter)
     })
   }, [query, statusFilter])
 
@@ -65,7 +52,7 @@ export default function BirdSpeciesPage() {
           </div>
 
           <div className="species-filters" role="group" aria-label="Filter by status">
-            {STATUS_FILTERS.map((f) => (
+            {SPECIES_FILTERS.map((f) => (
               <button
                 key={f.value}
                 className={`species-filter-btn${statusFilter === f.value ? ' species-filter-btn--active' : ''}`}
@@ -76,9 +63,7 @@ export default function BirdSpeciesPage() {
             ))}
           </div>
 
-          <p className="species-page__count">
-            {filtered.length} {filtered.length === 1 ? 'species' : 'species'} shown
-          </p>
+          <p className="species-page__count">{filtered.length} species shown</p>
         </div>
       </div>
 
@@ -90,29 +75,36 @@ export default function BirdSpeciesPage() {
           ) : (
             <ul className="species-grid">
               {filtered.map((s) => (
-                <li key={s.common}>
-                  <Link
-                    to={`/bird-species/${s.photo}`}
-                    className="species-card"
-                  >
+                <li key={s.slug}>
+                  <Link to={`/bird-species/${s.slug}`} className="species-card">
                     <div className="species-card__photo-wrap">
                       <img
                         className="species-card__photo"
-                        src={`/species_photos/${s.photo}.jpg`}
+                        src={`/species_photos/thumb/${s.photo}.webp`}
                         alt={s.common}
                         loading="lazy"
-                        onError={(e) => { e.currentTarget.classList.add('species-card__photo--missing') }}
+                        onError={(e) => {
+                          const img = e.currentTarget
+                          if (!img.dataset.fallback) {
+                            img.dataset.fallback = '1'
+                            img.src = `/species_photos/${s.photo}.webp`
+                          } else {
+                            img.classList.add('species-card__photo--missing')
+                          }
+                        }}
                       />
                     </div>
                     <div className="species-card__body">
                       <p className="species-card__common">{s.common}</p>
                       <p className="species-card__scientific">{s.scientific}</p>
                       <div className="species-card__badges">
-                        <span className={`species-badge species-badge--${s.status}`}>
-                          {s.status.charAt(0).toUpperCase() + s.status.slice(1)}
-                        </span>
+                        {s.statuses.map((st) => (
+                          <span key={st} className={`species-badge species-badge--${statusModifier(st)}`}>
+                            {st}
+                          </span>
+                        ))}
                         {s.stateList && (
-                          <span className="species-badge species-badge--endangered">
+                          <span className={`species-badge species-badge--${s.stateList.toLowerCase()}`}>
                             IL {s.stateList}
                           </span>
                         )}

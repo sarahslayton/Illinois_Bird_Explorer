@@ -745,6 +745,7 @@ ilw-header {
   padding: 2px 6px;
   border-radius: 2px;
 }
+/* Occurrence status — solid tint. A hairline border marks the "Rare" variants. */
 .species-badge--breeder {
   background: rgba(4, 85, 164, 0.1);
   color: var(--blue-mid);
@@ -753,9 +754,51 @@ ilw-header {
   background: rgba(19, 41, 75, 0.1);
   color: var(--navy);
 }
+.species-badge--resident {
+  background: rgba(31, 64, 150, 0.1);
+  color: var(--blue-deep);
+}
+.species-badge--winter {
+  background: rgba(94, 102, 105, 0.12);
+  color: var(--gray-dark);
+}
+.species-badge--vagrant {
+  background: rgba(165, 168, 170, 0.18);
+  color: var(--gray-dark);
+}
+.species-badge--introduced {
+  color: var(--gray-mid);
+  border: 1px solid rgba(165, 168, 170, 0.55);
+}
+.species-badge--extirpated {
+  background: rgba(94, 102, 105, 0.12);
+  color: var(--gray-dark);
+  border: 1px solid rgba(94, 102, 105, 0.35);
+}
+.species-badge--rare-breeder {
+  background: rgba(4, 85, 164, 0.06);
+  color: var(--blue-mid);
+  border: 1px solid rgba(4, 85, 164, 0.32);
+}
+.species-badge--rare-migrant {
+  background: rgba(19, 41, 75, 0.05);
+  color: var(--navy);
+  border: 1px solid rgba(19, 41, 75, 0.3);
+}
+.species-badge--rare-winter {
+  background: rgba(94, 102, 105, 0.06);
+  color: var(--gray-dark);
+  border: 1px solid rgba(94, 102, 105, 0.32);
+}
+
+/* Illinois listing status — warm lane, kept distinct from occurrence badges. */
 .species-badge--endangered {
   background: rgba(232, 74, 39, 0.12);
   color: var(--red);
+}
+.species-badge--threatened {
+  background: rgba(255, 95, 5, 0.12);
+  color: #c24a00;
 }
 
 
@@ -820,6 +863,12 @@ ilw-header {
   display: flex;
   gap: var(--sp-2);
   flex-wrap: wrap;
+}
+/* On the navy hero the tinted card colors don't read — use orange for every label. */
+.species-overview__badges .species-badge {
+  color: var(--orange);
+  background: rgba(255, 95, 5, 0.14);
+  border-color: rgba(255, 95, 5, 0.4);
 }
 
 /* Secondary nav */
@@ -916,6 +965,7 @@ ilw-header {
   .species-overview__media { grid-template-columns: 1fr; }
 }
 .species-overview__photo-wrap {
+  position: relative;
   border-radius: 3px;
   overflow: hidden;
   box-shadow:
@@ -929,6 +979,22 @@ ilw-header {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* Photo credit — badge typography, laid over the image */
+.species-overview__credit {
+  position: absolute;
+  right: var(--sp-2);
+  bottom: var(--sp-2);
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 2px;
+  color: var(--white);
+  background: rgba(19, 41, 75, 0.72);
+  pointer-events: none;
 }
 .species-overview__map-wrap {
   border-radius: 3px;

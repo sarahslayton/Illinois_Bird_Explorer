@@ -1,237 +1,62 @@
-export const SPECIES = [
-  {
-    common:     'American Goldfinch',
-    scientific: 'Spinus tristis',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'american_goldfinch',
-    diet:       'Seeds, particularly thistle and sunflower; occasionally insects during breeding season',
-    habitat:    'Open fields, meadows, roadsides, and weedy areas with abundant seed-producing plants',
-    clutchSize: '4–6 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Black-capped Chickadee',
-    scientific: 'Poecile atricapillus',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'black_capped_chickadee',
-    diet:       'Insects, spiders, seeds, and berries; caches food for winter',
-    habitat:    'Deciduous and mixed forests, woodland edges, suburban parks, and gardens',
-    clutchSize: '6–8 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Black-crowned Night-Heron',
-    scientific: 'Nycticorax nycticorax',
-    status:     'breeder',
-    stateList:  'Endangered',
-    photo:      'black_crowned_night_heron',
-    diet:       'Fish, frogs, crayfish, aquatic invertebrates, and small mammals',
-    habitat:    'Wetlands, marshes, lake shores, and riparian areas; roosts in dense vegetation',
-    clutchSize: '3–5 eggs',
-    conservationStatus: 'Least Concern (IUCN); State Endangered in Illinois',
-  },
-  {
-    common:     'Blue Jay',
-    scientific: 'Cyanocitta cristata',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'blue_jay',
-    diet:       'Acorns, seeds, nuts, insects, and occasionally eggs or nestlings of other birds',
-    habitat:    'Deciduous and mixed forests, woodland edges, suburban neighborhoods, and parks',
-    clutchSize: '4–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Canada Goose',
-    scientific: 'Branta canadensis',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'canada_goose',
-    diet:       'Grasses, sedges, aquatic plants, grains, and berries',
-    habitat:    'Lakes, ponds, rivers, wetlands, parks, golf courses, and agricultural fields',
-    clutchSize: '5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Common Yellowthroat',
-    scientific: 'Geothlypis trichas',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'common_yellowthroat',
-    diet:       'Insects and spiders, including beetles, moths, dragonflies, and grasshoppers',
-    habitat:    'Marshes, wet shrubby areas, cattail edges, and dense low vegetation near water',
-    clutchSize: '3–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Eastern Bluebird',
-    scientific: 'Sialia sialis',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'eastern_bluebird',
-    diet:       'Insects, earthworms, and wild berries and fruits in fall and winter',
-    habitat:    'Open woodlands, farmlands, orchards, and areas with scattered trees and nest boxes',
-    clutchSize: '4–6 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Eastern Meadowlark',
-    scientific: 'Sturnella magna',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'eastern_meadowlark',
-    diet:       'Insects (grasshoppers, crickets, beetles) in summer; seeds and grains in winter',
-    habitat:    'Native prairies, grasslands, hayfields, and pastures with sparse shrub cover',
-    clutchSize: '3–7 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Great Blue Heron',
-    scientific: 'Ardea herodias',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'great_blue_heron',
-    diet:       'Fish, frogs, salamanders, snakes, small mammals, and large invertebrates',
-    habitat:    'Wetlands, lake and river margins, marshes, and shallow coastal areas',
-    clutchSize: '3–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Great Egret',
-    scientific: 'Ardea alba',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'great_egret',
-    diet:       'Fish, frogs, crayfish, aquatic insects, and small snakes',
-    habitat:    'Shallow wetlands, lake margins, river edges, flooded fields, and marshes',
-    clutchSize: '3–4 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'House Finch',
-    scientific: 'Haemorhous mexicanus',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'house_finch',
-    diet:       'Seeds, buds, and fruits; occasionally insects during nesting season',
-    habitat:    'Urban and suburban areas, woodland edges, deserts, and open coniferous forests',
-    clutchSize: '4–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Northern Cardinal',
-    scientific: 'Cardinalis cardinalis',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'northern_cardinal',
-    diet:       'Seeds, grains, insects, and wild fruits; feeds young primarily insects',
-    habitat:    'Woodland edges, shrubby gardens, hedgerows, swamps, and suburban landscapes',
-    clutchSize: '3–4 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Red-winged Blackbird',
-    scientific: 'Agelaius phoeniceus',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'red_winged_blackbird',
-    diet:       'Insects, seeds, and grains; forages in marshes, fields, and along roadsides',
-    habitat:    'Freshwater and brackish marshes, wet meadows, and the edges of ponds and streams',
-    clutchSize: '3–4 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Sandhill Crane',
-    scientific: 'Grus grus',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'sandhill_crane',
-    diet:       'Grains, tubers, insects, small vertebrates, snails, and aquatic plants',
-    habitat:    'Wetlands, prairies, grasslands, and agricultural fields; nests in marshes',
-    clutchSize: '2 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Short-eared Owl',
-    scientific: 'Asio flammeus',
-    status:     'breeder',
-    stateList:  'Endangered',
-    photo:      'short_eared_owl',
-    diet:       'Voles, mice, shrews, and other small mammals; occasionally birds and insects',
-    habitat:    'Open grasslands, prairies, airports, agricultural fields, and coastal marshes',
-    clutchSize: '4–7 eggs',
-    conservationStatus: 'Least Concern (IUCN); State Endangered in Illinois',
-  },
-  {
-    common:     'Song Sparrow',
-    scientific: 'Melospiza melodia',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'song_sparrow',
-    diet:       'Seeds, insects, and small invertebrates; diet shifts seasonally',
-    habitat:    'Shrubby areas, wetland edges, thickets, gardens, and open woodland margins',
-    clutchSize: '3–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Tree Swallow',
-    scientific: 'Tachycineta bicolor',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'tree_swallow',
-    diet:       'Flying insects (midges, flies, beetles) and berries (especially bayberry) in winter',
-    habitat:    'Open areas near water, marshes, meadows, and areas with tree cavities or nest boxes',
-    clutchSize: '4–7 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Tufted Titmouse',
-    scientific: 'Baeolophus bicolor',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'tufted_titmouse',
-    diet:       'Insects, seeds, nuts, and berries; caches seeds for winter use',
-    habitat:    'Deciduous and mixed forests, suburban parks, and wooded areas with large trees',
-    clutchSize: '5–8 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'White-eyed Vireo',
-    scientific: 'Vireo griseus',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'white_eyed_vireo',
-    diet:       'Insects, spiders, and small berries; gleans foliage and hover-gleans for prey',
-    habitat:    'Dense shrubby thickets, briars, brushy woodland edges, and riparian shrubs',
-    clutchSize: '3–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'White-throated Sparrow',
-    scientific: 'Zonotrichia albicollis',
-    status:     'migrant',
-    stateList:  '',
-    photo:      'white_throated_sparrow',
-    diet:       'Seeds, insects, and berries; scratches in leaf litter to find food',
-    habitat:    'Forest edges, shrubby areas, and woodland understory during migration and winter',
-    clutchSize: '4–6 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-  {
-    common:     'Yellow Warbler',
-    scientific: 'Setophaga petechia',
-    status:     'breeder',
-    stateList:  '',
-    photo:      'yellow_warbler',
-    diet:       'Insects, especially caterpillars, mayflies, beetles, and aphids',
-    habitat:    'Shrubby wetlands, willow and alder thickets, stream margins, and forest edges',
-    clutchSize: '4–5 eggs',
-    conservationStatus: 'Least Concern (IUCN)',
-  },
-]
+import rows from '../../species_account_files/full_bird_list_photos.csv'
+
+// Fixed display order for the directory filter buttons. Any status found in the
+// data that isn't listed here is appended alphabetically.
+const STATUS_ORDER = ['Migrant', 'Breeder', 'Winter', 'Resident', 'Vagrant', 'Introduced', 'Extirpated']
+
+// "Rare Breeder" is filtered under the "Breeder" button; the card keeps the
+// full label. Strip a leading "Rare " to get the button a status belongs to.
+const baseStatus = (status) => status.replace(/^Rare\s+/i, '').trim()
+
+// Badge modifier class, e.g. "Rare Breeder" -> "species-badge--rare-breeder".
+export const statusModifier = (status) => status.toLowerCase().replace(/\s+/g, '-')
+
+function toSpecies(row) {
+  return {
+    common: row.Common_Name,
+    scientific: row.Scientific_Name,
+    slug: row.Slug,
+    photo: row.Slug,
+    attribution: row.Photo_attribution,
+    statuses: [row.Status1, row.Status2, row.Status3, row.Status4].filter(Boolean),
+    stateList: row.State_list, // '' | 'Endangered' | 'Threatened'
+  }
+}
+
+export const SPECIES = rows
+  .filter((r) => r.Has_photo === 'Y' && r.Has_species_account === 'Y')
+  .map(toSpecies)
+  .sort((a, b) => a.common.localeCompare(b.common))
 
 export function getSpeciesBySlug(slug) {
-  return SPECIES.find((s) => s.photo === slug) || null
+  return SPECIES.find((s) => s.slug === slug) || null
+}
+
+// Filter buttons, derived from the statuses present in SPECIES so the bar grows
+// as species are added. "State Listed" covers both Endangered and Threatened.
+export const SPECIES_FILTERS = (() => {
+  const present = new Set()
+  SPECIES.forEach((s) => s.statuses.forEach((st) => present.add(baseStatus(st))))
+
+  const ordered = [
+    ...STATUS_ORDER.filter((s) => present.has(s)),
+    ...[...present].filter((s) => !STATUS_ORDER.includes(s)).sort(),
+  ]
+
+  const filters = [{ value: 'all', label: 'All Species' }]
+  ordered.forEach((s) => filters.push({ value: `status:${s}`, label: s }))
+  if (SPECIES.some((s) => s.stateList)) {
+    filters.push({ value: 'state-listed', label: 'State Listed' })
+  }
+  return filters
+})()
+
+export function matchesFilter(species, filterValue) {
+  if (filterValue === 'all') return true
+  if (filterValue === 'state-listed') return species.stateList !== ''
+  if (filterValue.startsWith('status:')) {
+    const target = filterValue.slice('status:'.length)
+    return species.statuses.some((st) => baseStatus(st) === target)
+  }
+  return true
 }

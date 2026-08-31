@@ -1,17 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
-import { getSpeciesBySlug } from '../data/species'
+import { getSpeciesBySlug, statusModifier } from '../data/species'
 
 const SUB_NAV = [
   { label: 'Phenology' },
   { label: 'Illinois Population Trends' },
   { label: 'Conservation' },
-]
-
-const LIFE_HISTORY = [
-  { label: 'Diet',                key: 'diet' },
-  { label: 'Habitat',             key: 'habitat' },
-  { label: 'Clutch Size',         key: 'clutchSize' },
-  { label: 'Conservation Status', key: 'conservationStatus' },
 ]
 
 export default function SpeciesOverviewPage() {
@@ -39,11 +32,13 @@ export default function SpeciesOverviewPage() {
           <h1 className="species-overview__title">{species.common}</h1>
           <p className="species-overview__scientific">{species.scientific}</p>
           <div className="species-overview__badges">
-            <span className={`species-badge species-badge--${species.status}`}>
-              {species.status.charAt(0).toUpperCase() + species.status.slice(1)}
-            </span>
+            {species.statuses.map((st) => (
+              <span key={st} className={`species-badge species-badge--${statusModifier(st)}`}>
+                {st}
+              </span>
+            ))}
             {species.stateList && (
-              <span className="species-badge species-badge--endangered">
+              <span className={`species-badge species-badge--${species.stateList.toLowerCase()}`}>
                 IL {species.stateList}
               </span>
             )}
@@ -80,10 +75,13 @@ export default function SpeciesOverviewPage() {
             <div className="species-overview__photo-wrap">
               <img
                 className="species-overview__photo"
-                src={`/species_photos/${species.photo}.jpg`}
+                src={`/species_photos/${species.photo}.webp`}
                 alt={species.common}
                 onError={(e) => { e.currentTarget.style.display = 'none' }}
               />
+              {species.attribution && (
+                <span className="species-overview__credit">{species.attribution}</span>
+              )}
             </div>
             <div className="species-overview__map-wrap">
               <div className="species-overview__map-placeholder">
@@ -92,20 +90,6 @@ export default function SpeciesOverviewPage() {
                 <p className="species-overview__map-sub">Coming soon</p>
               </div>
             </div>
-          </div>
-
-          {/* Life history */}
-          <div className="species-overview__life-history">
-            <h2 className="species-overview__section-heading">Life History</h2>
-            <span className="placeholder-label">Placeholder text</span>
-            <dl className="life-history-grid">
-              {LIFE_HISTORY.map(({ label, key }) => (
-                <div key={key} className="life-history-item">
-                  <dt className="life-history-item__label">{label}</dt>
-                  <dd className="life-history-item__value">{species[key]}</dd>
-                </div>
-              ))}
-            </dl>
           </div>
 
         </div>
