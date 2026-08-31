@@ -18,12 +18,6 @@ export default function Footer() {
         </p>
       </div>
 
-      <nav slot="social" aria-label="Social media">
-        <a href="#" aria-label="Illinois Bird Explorer on GitHub">
-          <ilw-icon icon="github" alt="GitHub" size="44px"></ilw-icon>
-        </a>
-      </nav>
-
       <a slot="legal-link" href="https://illinois.edu/about/privacy-notice.html">
         Privacy Policy
       </a>

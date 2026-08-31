@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const SECTIONS = [
   {
     heading: 'Plant Native',
@@ -24,9 +22,7 @@ export default function HelpingBirdsPage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/education" className="resource-page__back">← Education</Link>
-          <span className="resource-page__kicker">Education</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Education</span>
           <h1 className="resource-page__title">Helping Birds from Home</h1>
         </div>
       </div>

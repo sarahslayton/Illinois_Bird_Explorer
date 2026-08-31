@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const RESEARCH = [
   {
     heading: 'Movement Research',
@@ -28,9 +26,7 @@ export default function BirdLabResearchPage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/birdlab" className="resource-page__back">← Illinois BirdLab</Link>
-          <span className="resource-page__kicker">Illinois BirdLab</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Illinois BirdLab</span>
           <h1 className="resource-page__title">Current Research</h1>
         </div>
       </div>

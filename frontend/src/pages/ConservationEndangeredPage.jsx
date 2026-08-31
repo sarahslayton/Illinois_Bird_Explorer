@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const IL_SPECIES = [
   { common: 'American Bittern',         scientific: 'Botaurus lentiginosus',          status: 'Endangered' },
   { common: 'Barn Owl',                 scientific: 'Tyto alba',                       status: 'Endangered' },
@@ -28,9 +26,7 @@ export default function ConservationEndangeredPage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/conservation" className="resource-page__back">← Conservation</Link>
-          <span className="resource-page__kicker">Conservation</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Conservation</span>
           <h1 className="resource-page__title">Endangered Species Protection Board</h1>
         </div>
       </div>

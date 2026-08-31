@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom'
-
 export default function BirdingHotspotsPage() {
   return (
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/education" className="resource-page__back">← Education</Link>
-          <span className="resource-page__kicker">Education</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Education</span>
           <h1 className="resource-page__title">Illinois Birding Hotspots</h1>
         </div>
       </div>

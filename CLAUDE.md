@@ -36,11 +36,20 @@ No test runner is configured.
 
 ## Architecture
 
-- `src/main.jsx` — entry point; mounts `<App>` into `#root`
-- `src/App.jsx` — root component with all application logic and layout
-- `src/index.css` — global styles with CSS custom properties for light/dark theming
-- `src/App.css` — component styles using CSS nesting syntax
-- `public/icons.svg` — SVG sprite sheet used for all icons (documentation, social links)
+- `src/main.jsx` — entry point; mounts `<App>` into `#root`; imports `index.css` then `css/styles.css`
+- `src/App.jsx` — router setup only (`BrowserRouter` + `Routes`); wraps every page in `<Header>` / `<Footer>` and scrolls to top on route change
+- `src/pages/` — one component per route (~20 pages). Most nav sections (Migration, Monitoring Programs, Conservation, Education, Illinois BirdLab) have **no landing page** — their header title is a dropdown toggle only, and content lives on the individual sub-pages. Exceptions: Bird Species (`/bird-species` is a real index) and Data Explorer (`/data-explorer`). Detail pages read a `:slug` param (e.g. `/bird-species/:slug`, `/migration/:slug`, `/monitoring/:slug`)
+- `src/components/` — shared layout: `Header.jsx`, `Navbar.jsx`, `Footer.jsx`
+- `src/data/` — static content as plain JS modules (`species.js`, `extinctBirds.js`, `migrationResources.js`, `monitoringResources.js`), each exporting a collection plus `getXBySlug` lookup helpers. Add page content here rather than hardcoding it in components
+- `src/css/styles.css` — the real global stylesheet; large file organized by page with section header comments (CSS nesting syntax, custom properties for light/dark theming)
+- `src/index.css` — base resets and root theme tokens
+- `src/App.css` — vestigial (not imported anywhere); ignore it
+- `public/icons.svg` — SVG sprite sheet; present but not currently referenced
+
+### Dependencies of note
+
+- `react-router-dom` v7 — routing, used throughout
+- `framer-motion`, `@radix-ui/react-tabs`, `@radix-ui/react-toggle-group` — installed but not yet used
 
 ESLint config (`eslint.config.js`) uses the flat config format with React hooks and refresh plugins.
 

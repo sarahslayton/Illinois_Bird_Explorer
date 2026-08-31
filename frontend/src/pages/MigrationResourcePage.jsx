@@ -9,7 +9,7 @@ export default function MigrationResourcePage() {
     return (
       <div className="resource-page__not-found">
         <h1>Page not found</h1>
-        <Link to="/migration">← Back to Migration</Link>
+        <Link to="/">← Back to Home</Link>
       </div>
     )
   }
@@ -18,9 +18,7 @@ export default function MigrationResourcePage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/migration" className="resource-page__back">← Migration</Link>
-          <span className="resource-page__kicker">Migration</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Migration</span>
           <h1 className="resource-page__title">{resource.title}</h1>
         </div>
       </div>

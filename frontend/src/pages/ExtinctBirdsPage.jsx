@@ -14,9 +14,7 @@ export default function ExtinctBirdsPage() {
     <div className="species-page">
       {/* Header */}
       <div className="species-page__header">
-        <div className="species-page__header-inner">
-          <Link to="/conservation" className="species-overview__back">← Conservation</Link>
-          <span className="species-page__kicker">Conservation</span>
+        <div className="species-page__header-inner">          <span className="species-page__kicker">Conservation</span>
           <h1 className="species-page__title">Extinct Birds of Illinois</h1>
           <p className="species-page__subtitle">
             Species that historically occurred in Illinois and are now globally extinct or almost certainly so.

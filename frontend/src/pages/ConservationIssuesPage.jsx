@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 const ISSUES = [
   {
     heading: 'Full Annual Cycle Conservation',
@@ -24,9 +22,7 @@ export default function ConservationIssuesPage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/conservation" className="resource-page__back">← Conservation</Link>
-          <span className="resource-page__kicker">Conservation</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Conservation</span>
           <h1 className="resource-page__title">Major Conservation Issues</h1>
         </div>
       </div>

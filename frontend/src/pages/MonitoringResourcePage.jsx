@@ -9,7 +9,7 @@ export default function MonitoringResourcePage() {
     return (
       <div className="resource-page__not-found">
         <h1>Page not found</h1>
-        <Link to="/monitoring">← Back to Monitoring Programs</Link>
+        <Link to="/">← Back to Home</Link>
       </div>
     )
   }
@@ -18,9 +18,7 @@ export default function MonitoringResourcePage() {
     <div className="resource-page">
       {/* Header */}
       <div className="resource-page__header">
-        <div className="resource-page__header-inner">
-          <Link to="/monitoring" className="resource-page__back">← Monitoring Programs</Link>
-          <span className="resource-page__kicker">Monitoring Programs</span>
+        <div className="resource-page__header-inner">          <span className="resource-page__kicker">Monitoring Programs</span>
           <h1 className="resource-page__title">{resource.title}</h1>
         </div>
       </div>

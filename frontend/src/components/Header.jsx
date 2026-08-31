@@ -43,8 +43,8 @@ export default function Header() {
           </li>
 
           <li>
-            <ilw-header-menu-section linked="true">
-              <Link slot="link" to="/migration">Migration</Link>
+            <ilw-header-menu-section>
+              <span slot="label">Migration</span>
               <ul>
                 <li><Link to="/migration/hotspots">Bird Migration Hotspots and Important Stopover Sites</Link></li>
                 <li><Link to="/migration/motus">MOTUS</Link></li>
@@ -58,8 +58,8 @@ export default function Header() {
           </li>
 
           <li>
-            <ilw-header-menu-section linked="true">
-              <Link slot="link" to="/monitoring">Monitoring Programs</Link>
+            <ilw-header-menu-section>
+              <span slot="label">Monitoring Programs</span>
               <ul>
                 <li><Link to="/monitoring/breeding-bird-survey">North American Breeding Bird Survey</Link></li>
                 <li><Link to="/monitoring/christmas-bird-count">Audubon Christmas Bird Count</Link></li>
@@ -73,8 +73,8 @@ export default function Header() {
           </li>
 
           <li>
-            <ilw-header-menu-section linked="true">
-              <Link slot="link" to="/conservation">Conservation</Link>
+            <ilw-header-menu-section>
+              <span slot="label">Conservation</span>
               <ul>
                 <li><Link to="/conservation/endangered-species">Endangered Species Protection Board</Link></li>
                 <li><Link to="/conservation/wildlife-action-plan">Illinois Wildlife Action Plan</Link></li>
@@ -97,8 +97,8 @@ export default function Header() {
           </li>
 
           <li>
-            <ilw-header-menu-section linked="true">
-              <Link slot="link" to="/education">Education</Link>
+            <ilw-header-menu-section>
+              <span slot="label">Education</span>
               <ul>
                 <li><Link to="/education/educator-resources">Educator Resources</Link></li>
                 <li><Link to="/education/birding-hotspots">Illinois Birding Hotspots</Link></li>
@@ -109,8 +109,8 @@ export default function Header() {
           </li>
 
           <li>
-            <ilw-header-menu-section linked="true">
-              <Link slot="link" to="/birdlab">Illinois BirdLab</Link>
+            <ilw-header-menu-section>
+              <span slot="label">Illinois BirdLab</span>
               <ul>
                 <li><Link to="/birdlab/people">People</Link></li>
                 <li><Link to="/birdlab/history">History of Bird Research in Illinois</Link></li>
