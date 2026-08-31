@@ -31,8 +31,11 @@ for (const [path, raw] of Object.entries(files)) {
   CONTENT[key] = parse(raw)
 }
 
+// getContent('home')  -> written_content/home.md
+// getContent('migration', 'birdcast') -> written_content/migration/birdcast.md
 export function getContent(section, slug) {
-  return CONTENT[`${section}/${slug}`.toLowerCase()] || null
+  const key = (slug ? `${section}/${slug}` : section).toLowerCase()
+  return CONTENT[key] || null
 }
 
 // Slugs that have a content file for a section — handy for building index lists.

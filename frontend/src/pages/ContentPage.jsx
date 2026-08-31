@@ -20,6 +20,9 @@ const markdownComponents = {
 }
 
 function ResourceLinks({ resources }) {
+  // Tolerate stray/blank list entries in a page's frontmatter.
+  resources = resources.filter((link) => link && link.url)
+  if (resources.length === 0) return null
   return (
     <section className="resource-page__links-section">
       <h2 className="resource-page__section-heading">Key Resources</h2>

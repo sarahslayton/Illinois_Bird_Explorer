@@ -47,7 +47,7 @@ export default function Header() {
               <span slot="label">Migration</span>
               <ul>
                 <li><Link to="/migration/hotspots">Bird Migration Hotspots and Important Stopover Sites</Link></li>
-                <li><Link to="/migration/motus">MOTUS</Link></li>
+                <li><Link to="/migration/motus">MOTUS Wildlife Tracking System</Link></li>
                 <li><Link to="/migration/chicago-monitoring">Chicago Bird Migration Monitoring Network</Link></li>
                 <li><Link to="/migration/midwest-migration">Midwest Migration Network</Link></li>
                 <li><Link to="/migration/southern-wings">Southern Wings</Link></li>

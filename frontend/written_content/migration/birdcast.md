@@ -1,6 +1,5 @@
 ---
 title: BirdCast
-intro: Weather-radar and machine-learning tools that detect, measure, and forecast nocturnal bird migration across the United States in near real time.
 updated: 2026-09-03
 placeholder: true
 resources:
@@ -17,8 +16,7 @@ resources:
     url: https://github.com/birdcast
     description: Open data and code associated with the BirdCast project.
 ---
-
-## How it works
+Birdcast is a weather-radar and machine-learning tool that detects, measures, and forecasts nocturnal bird migration across the United States in near real time. 
 
 BirdCast translates the "clutter" in weather-surveillance radar data — much of
 which is actually flying birds — into estimates of how many birds are aloft,

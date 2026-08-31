@@ -1,5 +1,16 @@
 import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
+import { getContent } from '../data/content'
+
+// Editable copy lives in written_content/home.md. The "Explore the Site" grid
+// below (labels, photos, links) stays defined here on purpose.
+const home = getContent('home')
+const MISSION_STATEMENT =
+  'Illinois is home to over 400 species of birds, from year-round residents to spectacular ' +
+  'seasonal migrants passing through on their journeys across the continent. This resource ' +
+  'brings together scientific data, community observations, and conservation information to ' +
+  'help agencies, land managers, researchers, and the public understand and protect the ' +
+  'birds of Illinois.'
 
 // Toggle to false to instantly revert cards to plain white background
 const SHOW_CARD_PHOTOS = true
@@ -93,16 +104,12 @@ export default function HomePage() {
       <section className="mission" aria-labelledby="mission-heading">
         <div className="mission__inner">
           <span className="placeholder-label">Placeholder text</span>
-          <span className="mission__kicker">Our Mission</span>
+          <span className="mission__kicker">{home?.missionKicker ?? 'Our Mission'}</span>
           <h2 id="mission-heading" className="mission__heading">
-            Connecting People with Illinois Birds
+            {home?.missionHeading ?? 'Connecting People with Illinois Birds'}
           </h2>
           <blockquote className="mission__quote">
-            Illinois is home to over 400 species of birds, from year-round residents to spectacular
-            seasonal migrants passing through on their journeys across the continent. This resource
-            brings together scientific data, community observations, and conservation information to
-            help agencies, land managers, researchers, and the public understand and protect the
-            birds of Illinois.
+            {home?.body || MISSION_STATEMENT}
           </blockquote>
         </div>
       </section>
@@ -112,10 +119,10 @@ export default function HomePage() {
         <div className="features__inner">
           <span className="placeholder-label">Placeholder text</span>
           <h2 id="features-heading" className="features__heading">
-            Explore the Site
+            {home?.featuresHeading ?? 'Explore the Site'}
           </h2>
           <p className="features__subheading">
-            Everything you need to learn about, track, and protect Illinois birds.
+            {home?.featuresSubheading ?? 'Everything you need to learn about, track, and protect Illinois birds.'}
           </p>
           <div className="features__grid">
             {FEATURES.map((card) => (

@@ -1235,11 +1235,14 @@ ilw-header {
 .resource-page__body {
   background: var(--gray-light);
   flex: 1;
-  padding: var(--sp-12) var(--sp-8) var(--sp-20);
+  padding: var(--sp-12) 0 var(--sp-20);
 }
 .resource-page__body-inner {
   max-width: var(--max-content);
   margin: 0 auto;
+  /* Match the hero header's inner padding so the body content lines up
+     with the page title. */
+  padding: 0 var(--sp-8);
   display: flex;
   flex-direction: column;
   gap: var(--sp-12);
@@ -1272,14 +1275,15 @@ ilw-header {
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.85);
   margin: var(--sp-4) 0 0;
-  max-width: 60ch;
+  max-width: 80ch;
 }
 
-/* Rendered Markdown body */
+/* Rendered Markdown body — spans the full body width, aligned with the
+   Key Resources grid below it. */
 .content-prose {
-  max-width: 72ch;
   font-family: var(--font-body);
-  color: var(--gray-dark);
+  /* Darker than --gray-dark for stronger contrast on the light-grey body. */
+  color: #262b2e;
 }
 .content-prose > :first-child { margin-top: 0; }
 .content-prose > :last-child { margin-bottom: 0; }
@@ -1287,6 +1291,7 @@ ilw-header {
   font-size: 1.05rem;
   line-height: 1.75;
   margin: 0 0 var(--sp-5);
+  color: inherit; /* override the global `p` colour so the dark prose colour wins */
 }
 .content-prose h2 {
   font-family: var(--font-heading);
@@ -1314,6 +1319,7 @@ ilw-header {
   font-size: 1.02rem;
   line-height: 1.7;
   margin-bottom: var(--sp-2);
+  color: inherit;
 }
 .content-prose a {
   color: var(--link);
