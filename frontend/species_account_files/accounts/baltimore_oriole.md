@@ -20,10 +20,9 @@ a suspended woven pendant of plant fiber strips lined with fine grass, plant dow
 4–5, pale grayish to bluish white, marked with dark colors
 ### Incubation Period:
 12–14 days
-### Time to Fledge: 
+### Time to Fledge:
 from 12 to 14 days
-	
-## Illinois Population Trends 
-### History 
-During the late 1800s and early 1900s, the Baltimore Oriole was a common summer resident in Illinois (Cory 1909). Although the Baltimore Oriole was reported throughout the state in the 1907–1909 and 1956–1958 censuses, the data were insufficient for a comparison (Graber and Graber 1963). The Baltimore Oriole breeds widely through the state.
 
+## Illinois Population Trends
+### History
+During the late 1800s and early 1900s, the Baltimore Oriole was a common summer resident in Illinois (Cory 1909). Although the Baltimore Oriole was reported throughout the state in the 1907–1909 and 1956–1958 censuses, the data were insufficient for a comparison (Graber and Graber 1963). The Baltimore Oriole breeds widely through the state.
