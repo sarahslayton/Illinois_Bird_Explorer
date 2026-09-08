@@ -5,12 +5,15 @@ resources:
   - label: MMN Official Website
     url: https://midwestmigrationnetwork.org/
     description: Regional organization conducting bird research and coordinated monitoring across the Midwest.
-  - label: Upper Mississippi/Great Lakes Joint Venture
-    url: https://umgljv.org/
-    description: Regional organization of midwestern partners focused on bird population monitoring and research, conservation planning, and habitat protection.
+  - label: Phillips Tract Banding Station
+    url: https://bird-banding.inhs.illinois.edu/
+    description: Bird banding station at UIUC that collaborates with the MMN 
   - label: Partners in Flight
     url: https://www.partnersinflight.org
     description: International landbird conservation initiative coordinating monitoring, research, and land management recommendations across the Americas.
+  - label: Upper Mississippi/Great Lakes Joint Venture
+    url: https://umgljv.org/
+    description: Regional organization of midwestern partners focused on bird population monitoring and research, conservation planning, and habitat protection.
 ---
 
 The Midwest Migration Network (MMN) is a regional collaboration of researchers, bird observatories, and conservation agencies working to coordinate migration monitoring across the Illinois, Indiana, Iowa, Michigan, Minnesota, Missouri, Ohio, and Wisconsin. 

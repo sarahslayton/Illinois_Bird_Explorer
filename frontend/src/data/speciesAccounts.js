@@ -11,10 +11,9 @@
 // heading not in this list is ignored, so every species page stays uniform.
 export const FAST_FACTS = [
   'Rangewide Distribution',
-  'Illinois Abundance',
-  'Conservation Status',
-  'Diet',
   'Breeding Habitat',
+  'Illinois Abundance',
+  'Diet',
 ]
 
 export const PHENOLOGY_FACTS = ['Nest', 'Eggs', 'Incubation Period', 'Time to Fledge']
@@ -71,8 +70,18 @@ function parseAccount(raw) {
     historyLines = key ? trends.fields[key] : trends.text
   }
 
+  // Conservation Status is authored as a ### field under ## Fast Facts, but
+  // renders as its own prose block (like Species Description), not a card.
+  const fastFactsSec = sections['Fast Facts']
+  const conservationKey = fastFactsSec &&
+    fastFactsSec.order.find((k) => norm(k) === 'conservation status')
+  const conservationStatus = conservationKey
+    ? toParagraphs(fastFactsSec.fields[conservationKey])
+    : []
+
   return {
     description: toParagraphs(sections['Species Description']?.text || []),
+    conservationStatus,
     fastFacts: pickFields('Fast Facts', FAST_FACTS),
     phenology: pickFields('Phenology', PHENOLOGY_FACTS),
     history: toParagraphs(historyLines),

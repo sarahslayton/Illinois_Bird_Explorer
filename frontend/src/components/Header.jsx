@@ -62,6 +62,7 @@ export default function Header() {
               <span slot="label">Monitoring Programs</span>
               <ul>
                 <li><Link to="/monitoring/breeding-bird-survey">North American Breeding Bird Survey</Link></li>
+                <li><Link to="/monitoring/breeding-bird-atlas">Illinois Breeding Bird Atlas</Link></li>
                 <li><Link to="/monitoring/christmas-bird-count">Audubon Christmas Bird Count</Link></li>
                 <li><Link to="/monitoring/spring-bird-count">Spring Bird Count</Link></li>
                 <li><Link to="/monitoring/critical-trends">Critical Trends Assessment Program</Link></li>

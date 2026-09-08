@@ -4,14 +4,15 @@ The male American Redstart, with its bright orange and black plumage, is easily 
 ## Fast Facts
 ### Rangewide Distribution:
 western and southern half of Canada, south through most of the U.S. to northwestern South America, and the Caribbean Islands
-### Illinois Abundance:
-common migrant and fairly common summer resident (locally)
-### Conservation Status:
-None
-### Diet:
-insects
 ### Breeding Habitat:
 open deciduous and mixed forests, and second-growth, especially in vine-covered trees
+### Illinois Abundance:
+common migrant and fairly common summer resident (locally)
+### Diet:
+insects
+### Conservation Status:
+None
+
 
 ## Phenology
 ### Nest:

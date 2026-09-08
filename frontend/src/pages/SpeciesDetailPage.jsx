@@ -65,6 +65,13 @@ function OverviewPanel({ species, account }) {
       </section>
 
       <section>
+        <h2 className="species-overview__section-heading">Conservation Status</h2>
+        {account?.conservationStatus.length
+          ? <Prose paragraphs={account.conservationStatus} />
+          : <Placeholder>Conservation status coming soon.</Placeholder>}
+      </section>
+
+      <section>
         <h2 className="species-overview__section-heading">Fast Facts</h2>
         {account?.fastFacts.length
           ? <FactsGrid facts={account.fastFacts} />

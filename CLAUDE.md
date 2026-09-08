@@ -38,9 +38,11 @@ No test runner is configured.
 
 - `src/main.jsx` — entry point; mounts `<App>` into `#root`; imports `index.css` then `css/styles.css`
 - `src/App.jsx` — router setup only (`BrowserRouter` + `Routes`); wraps every page in `<Header>` / `<Footer>` and scrolls to top on route change
-- `src/pages/` — one component per route (~20 pages). Most nav sections (Migration, Monitoring Programs, Conservation, Education, Illinois BirdLab) have **no landing page** — their header title is a dropdown toggle only, and content lives on the individual sub-pages. Exceptions: Bird Species (`/bird-species` is a real index) and Data Explorer (`/data-explorer`). Detail pages read a `:slug` param (e.g. `/bird-species/:slug`, `/migration/:slug`, `/monitoring/:slug`)
-- `src/components/` — shared layout: `Header.jsx`, `Navbar.jsx`, `Footer.jsx`
-- `src/data/` — static content as plain JS modules (`species.js`, `extinctBirds.js`, `migrationResources.js`, `monitoringResources.js`), each exporting a collection plus `getXBySlug` lookup helpers. Add page content here rather than hardcoding it in components
+- `src/pages/` — route components. Most nav sections (Migration, Monitoring Programs, Conservation, Education, Illinois BirdLab) have **no landing page** — their header title is a dropdown toggle only. Their sub-pages are all Markdown-backed (see below). Bespoke page components remain for Bird Species (`/bird-species` index + `/bird-species/:slug[/phenology|/trends]` via `SpeciesDetailPage`), Extinct Birds (`/conservation/extinct-birds[/:slug]`), Data Explorer, and Home
+- `written_content/<section>/<slug>.md` — the prose pages for Migration / Monitoring / Conservation / Education / BirdLab. `ContentPage.jsx` renders them: YAML frontmatter (`title`, `intro?`, `updated?`, `placeholder?`, `resources?[]`) + a Markdown body via `react-markdown` + `remark-gfm`. Loaded by `src/data/content.js` (`getContent(section, slug)`). Routes are `<Route path="/<section>/:slug" element={<ContentPage section="<section>" sectionLabel="…" />} />`. `written_content/home.md` holds the editable Home copy (mission text + section headings), read by `HomePage.jsx` via `getContent('home')`; the "Explore the Site" grid stays hardcoded in `HomePage.jsx`
+- `species_account_files/accounts/<slug>.md` — species detail content (separate rigid-schema loader, `src/data/speciesAccounts.js`); `species_account_files/full_bird_list_photos.csv` drives the species directory via `src/data/species.js`
+- `src/components/` — shared layout: `Header.jsx`, `Navbar.jsx` (unused), `Footer.jsx`
+- `src/data/` — `species.js` (CSV-backed), `extinctBirds.js`, `speciesAccounts.js` (md-backed), `content.js` (md-backed). `getXBySlug` lookup helpers throughout
 - `src/css/styles.css` — the real global stylesheet; large file organized by page with section header comments (CSS nesting syntax, custom properties for light/dark theming)
 - `src/index.css` — base resets and root theme tokens
 - `src/App.css` — vestigial (not imported anywhere); ignore it
@@ -49,6 +51,7 @@ No test runner is configured.
 ### Dependencies of note
 
 - `react-router-dom` v7 — routing, used throughout
+- `react-markdown` + `remark-gfm` — render `written_content/**/*.md` bodies; `js-yaml` parses their frontmatter
 - `framer-motion`, `@radix-ui/react-tabs`, `@radix-ui/react-toggle-group` — installed but not yet used
 
 ESLint config (`eslint.config.js`) uses the flat config format with React hooks and refresh plugins.
