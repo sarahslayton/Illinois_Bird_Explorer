@@ -34,15 +34,41 @@ npm run preview   # Serve production build locally
 
 No test runner is configured.
 
+### Photo conversion
+
+`scripts/convert-photos.ps1` turns source JPGs into the `.webp` sizes the site serves, and owns
+everything it writes under `public/` — never hand-place converted images there. Needs ImageMagick 7
+(`winget install ImageMagick.ImageMagick`). Run from `frontend/` in **PowerShell**:
+
+```powershell
+scripts\convert-photos.ps1 main <slug>              # main_photos\<slug>.jpg -> species_photos\<slug>.webp + thumb\
+scripts\convert-photos.ps1 additional <slug>        # additional_photos\<slug>\*.jpg -> species_photos\additional\<slug>\*.webp + thumb\
+scripts\convert-photos.ps1 additional-all           # batch: every folder under additional_photos\
+scripts\convert-photos.ps1 content <section>/<slug> # content_images_src\<section>\<slug>\*.jpg -> public\content_images\<section>\<slug>\*.webp
+```
+
+`convert-photos.sh` is the macOS/Linux equivalent (Git Bash only — **not** WSL bash, which mounts
+`C:` at `/mnt/c` with a separate PATH and can't find `magick`; that mismatch is why `.sh` fails on
+Windows). Full size caps the long edge at 1500px (q80); thumbs at 600px (q78). Source JPGs are the
+archive — never edit them in place.
+
+**Adding a species' "Photos" tab:** (1) put JPGs in `species_account_files\additional_photos\<slug>\`
+(e.g. `1.jpg`, `2.jpg`); (2) `scripts\convert-photos.ps1 additional <slug>`; (3) write
+`species_account_files\accounts\additional_photo_info\<slug>.yml` with a `caption`/`credit` per file;
+(4) restart the dev server the first time a new `<slug>.yml` is added (new glob entries aren't always
+hot-reloaded). Full walkthrough: `species_account_files/additional_photos/README.md` and
+`.../accounts/additional_photo_info/README.md`.
+
 ## Architecture
 
 - `src/main.jsx` — entry point; mounts `<App>` into `#root`; imports `index.css` then `css/styles.css`
 - `src/App.jsx` — router setup only (`BrowserRouter` + `Routes`); wraps every page in `<Header>` / `<Footer>` and scrolls to top on route change
-- `src/pages/` — route components. Most nav sections (Migration, Monitoring Programs, Conservation, Education, Illinois BirdLab) have **no landing page** — their header title is a dropdown toggle only. Their sub-pages are all Markdown-backed (see below). Bespoke page components remain for Bird Species (`/bird-species` index + `/bird-species/:slug[/phenology|/trends]` via `SpeciesDetailPage`), Extinct Birds (`/conservation/extinct-birds[/:slug]`), Data Explorer, and Home
+- `src/pages/` — route components. Most nav sections (Migration, Monitoring Programs, Conservation, Education, Illinois BirdLab) have **no landing page** — their header title is a dropdown toggle only. Their sub-pages are all Markdown-backed (see below). Bespoke page components remain for Bird Species (`/bird-species` index + `/bird-species/:slug[/phenology|/trends|/photos]` via `SpeciesDetailPage`), Extinct Birds (`/conservation/extinct-birds[/:slug]`), Data Explorer, and Home
 - `written_content/<section>/<slug>.md` — the prose pages for Migration / Monitoring / Conservation / Education / BirdLab. `ContentPage.jsx` renders them: YAML frontmatter (`title`, `intro?`, `updated?`, `placeholder?`, `resources?[]`) + a Markdown body via `react-markdown` + `remark-gfm`. Loaded by `src/data/content.js` (`getContent(section, slug)`). Routes are `<Route path="/<section>/:slug" element={<ContentPage section="<section>" sectionLabel="…" />} />`. `written_content/home.md` holds the editable Home copy (mission text + section headings), read by `HomePage.jsx` via `getContent('home')`; the "Explore the Site" grid stays hardcoded in `HomePage.jsx`
-- `species_account_files/accounts/<slug>.md` — species detail content (separate rigid-schema loader, `src/data/speciesAccounts.js`); `species_account_files/full_bird_list_photos.csv` drives the species directory via `src/data/species.js`
+- `species_account_files/accounts/<slug>.md` — species detail content (separate rigid-schema loader, `src/data/speciesAccounts.js`); `species_account_files/full_bird_list_photos.csv` drives the species directory via `src/data/species.js`. Headings map to `SpeciesDetailPage` tabs: `## Species Description` + `## Fast Facts` + `## Phenology` feed Overview/Phenology, `## Illinois Population Trends` → `### History` feeds Trends. Overview tab renders **Species Description → Conservation Status → Fast Facts**: the `### Conservation Status` field lives under `## Fast Facts` in the file but is pulled out and shown as its own prose section (not a card); the Fast Facts card grid is the fixed 4 — Rangewide Distribution, Breeding Habitat, Illinois Abundance, Diet (order set by `FAST_FACTS` in `speciesAccounts.js`, not the file)
+- `species_account_files/accounts/additional_photo_info/<slug>.yml` — optional per-species extra photos for the "Photos" tab (loader `src/data/speciesPhotos.js`, `getSpeciesPhotos(slug)`). Shape: `photos: [{ file, caption, credit }]`. Images at `public/species_photos/additional/<slug>/<file>.webp` (+ `thumb/`), sources at `species_account_files/additional_photos/<slug>/`. No sidecar → no Photos tab. `normalize-accounts.mjs` ignores `additional_photo_info/` (it only touches `accounts/*.md`) — keep it that way. See `additional_photo_info/README.md`
 - `src/components/` — shared layout: `Header.jsx`, `Navbar.jsx` (unused), `Footer.jsx`
-- `src/data/` — `species.js` (CSV-backed), `extinctBirds.js`, `speciesAccounts.js` (md-backed), `content.js` (md-backed). `getXBySlug` lookup helpers throughout
+- `src/data/` — `species.js` (CSV-backed), `extinctBirds.js`, `speciesAccounts.js` (md-backed), `speciesPhotos.js` (yml-backed, Photos tab), `content.js` (md-backed). `getXBySlug` lookup helpers throughout
 - `src/css/styles.css` — the real global stylesheet; large file organized by page with section header comments (CSS nesting syntax, custom properties for light/dark theming)
 - `src/index.css` — base resets and root theme tokens
 - `src/App.css` — vestigial (not imported anywhere); ignore it

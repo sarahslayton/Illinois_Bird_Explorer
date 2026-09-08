@@ -1,11 +1,14 @@
 import { Link, useParams } from 'react-router-dom'
 import { getSpeciesBySlug, statusModifier } from '../data/species'
 import { getSpeciesAccount } from '../data/speciesAccounts'
+import { getSpeciesPhotos } from '../data/speciesPhotos'
 
-const TABS = [
+// "Photos" only appears when the species has an additional_photo_info/<slug>.yml sidecar.
+const BASE_TABS = [
   { id: 'overview',  label: 'Overview',                  path: '' },
   { id: 'phenology', label: 'Phenology',                 path: '/phenology' },
   { id: 'trends',    label: 'Illinois Population Trends', path: '/trends' },
+  { id: 'photos',    label: 'Photos',                     path: '/photos' },
 ]
 
 function Prose({ paragraphs }) {
@@ -116,6 +119,48 @@ function TrendsPanel({ account }) {
   )
 }
 
+function PhotosPanel({ species, photos }) {
+  return (
+    <section>
+      <h2 className="species-overview__section-heading">Photos</h2>
+      {photos.length === 0 ? (
+        <Placeholder>Additional photos of the {species.common} coming soon.</Placeholder>
+      ) : (
+        <ul className="species-gallery">
+          {photos.map((p, i) => (
+            <li key={i} className="species-gallery__card">
+              <a
+                className="species-gallery__figure"
+                href={p.full}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="species-gallery__img"
+                  src={p.thumb}
+                  alt={p.caption || species.common}
+                  loading="lazy"
+                  decoding="async"
+                  onError={(e) => {
+                    const card = e.currentTarget.closest('.species-gallery__card')
+                    if (card) card.style.display = 'none'
+                  }}
+                />
+              </a>
+              {(p.caption || p.credit) && (
+                <div className="species-gallery__body">
+                  {p.caption && <p className="species-gallery__caption">{p.caption}</p>}
+                  {p.credit && <p className="species-gallery__credit">Photo: {p.credit}</p>}
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  )
+}
+
 export default function SpeciesDetailPage({ tab }) {
   const { slug } = useParams()
   const species = getSpeciesBySlug(slug)
@@ -130,6 +175,8 @@ export default function SpeciesDetailPage({ tab }) {
   }
 
   const account = getSpeciesAccount(slug)
+  const photos = getSpeciesPhotos(slug)
+  const tabs = BASE_TABS.filter((t) => t.id !== 'photos' || photos.length > 0)
 
   return (
     <div className="species-overview">
@@ -160,7 +207,7 @@ export default function SpeciesDetailPage({ tab }) {
       {/* Secondary navigation */}
       <nav className="species-subnav" aria-label="Species sections">
         <div className="species-subnav__inner">
-          {TABS.map((t) => (
+          {tabs.map((t) => (
             <Link
               key={t.id}
               to={`/bird-species/${slug}${t.path}`}
@@ -180,6 +227,7 @@ export default function SpeciesDetailPage({ tab }) {
           {tab === 'overview'  && <OverviewPanel species={species} account={account} />}
           {tab === 'phenology' && <PhenologyPanel account={account} />}
           {tab === 'trends'    && <TrendsPanel account={account} />}
+          {tab === 'photos'    && <PhotosPanel species={species} photos={photos} />}
         </div>
       </div>
 

@@ -1,0 +1,11 @@
+# Extra photos for the American Robin "Photos" tab.
+# Images: species_account_files/additional_photos/american_robin/<file>.jpg
+#   -> converted to public/species_photos/additional/american_robin/<file>.webp
+# See README.md in this folder for the format.
+photos:
+  - file: 1
+    caption: American Robin nest with eggs.
+    credit: Bernell MacDonald, Pixabay
+  - file: 2
+    caption: Fledgling American Robin.
+    credit: Icewall42, Pixabay

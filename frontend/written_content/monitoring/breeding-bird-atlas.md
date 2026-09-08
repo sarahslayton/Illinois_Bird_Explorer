@@ -4,7 +4,7 @@ placeholder: false
 resources:
   - label: Illinois Breeding Bird Atlas Online
     url: https://bba.birds.illinois.edu/
-    description: Online version of the full Illinois Breeding Bird Atlas by Kleen, Cordle, and Montgomery in 1994 summarizing statewide surveys conducted between 1986-1991
+    description: Online version of the full Illinois Breeding Bird Atlas summarizing statewide species accounts and BBA survey results from the original document.
   - label: Illinois Natural History Survey — Bird Monitoring
     url: https://wildlife.inhs.illinois.edu/
     description: Home of the research group that coordinated the atlas and continues long-term bird monitoring in Illinois.
