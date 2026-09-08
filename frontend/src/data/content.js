@@ -7,7 +7,11 @@
 //   updated    optional  — ISO date
 //   placeholder optional — true while the body is provisional (shows a label)
 //   resources  optional  — [{ label, url, description }] for the "Key Resources" grid
-// Body: standard Markdown, rendered with react-markdown + remark-gfm.
+//   hero       optional  — { src, alt, credit } lead image, shown above the body
+// Body: standard Markdown, rendered with react-markdown + remark-gfm. Images
+// (`![caption](/path.webp "credit")`) render as captioned <figure>s via
+// ContentPage.jsx — add ?full to the src for full width; put two or three image
+// lines back-to-back (no blank line between) for a side-by-side row.
 
 import { load as parseYaml } from 'js-yaml'
 

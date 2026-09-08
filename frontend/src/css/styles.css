@@ -1457,6 +1457,87 @@ ilw-header {
   color: var(--navy);
 }
 
+/* Content-page figures — output of the img / p renderers in ContentPage.jsx.
+   Caption + credit type is kept in sync with the species Photos gallery
+   (.species-gallery__caption / __credit in the SPECIES ACCOUNTS PAGE block). */
+.content-hero {
+  margin: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  background: var(--navy);
+  box-shadow:
+    0 2px 4px  rgba(19, 41, 75, 0.08),
+    0 8px 24px rgba(19, 41, 75, 0.12);
+}
+.content-hero img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+}
+.content-hero__credit {
+  position: absolute;
+  right: var(--sp-2);
+  bottom: var(--sp-2);
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--white);
+  background: rgba(19, 41, 75, 0.72);
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+/* Inline figure — centered at a comfortable reading measure by default. */
+.content-figure {
+  margin: var(--sp-8) auto;
+  max-width: var(--max-narrow);
+}
+.content-figure img {
+  width: 100%;
+  border-radius: 3px;
+  box-shadow:
+    0 1px 2px  rgba(19, 41, 75, 0.06),
+    0 4px 12px rgba(19, 41, 75, 0.09);
+}
+.content-figure__caption {
+  margin-top: var(--sp-3);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--gray-dark);
+}
+.content-figure__credit {
+  margin-left: var(--sp-2);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  white-space: nowrap;
+}
+/* ?full on the src — span the whole body column. */
+.content-figure--full {
+  max-width: none;
+}
+/* Two or three images on consecutive lines (no blank line between) — one row. */
+.content-figure--group {
+  margin: var(--sp-8) 0;
+  max-width: none;
+  display: flex;
+  gap: var(--sp-6);
+}
+.content-figure--group .content-figure {
+  margin: 0;
+  max-width: none;
+  flex: 1 1 0;
+}
+@media (max-width: 640px) {
+  .content-figure--group { flex-direction: column; }
+}
+
 /* Resource link cards */
 .resource-links-grid {
   display: grid;

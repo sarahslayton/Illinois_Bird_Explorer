@@ -3,8 +3,12 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getContent } from '../data/content'
 
-// Open external links in a new tab; leave in-app links to react-router elsewhere.
+// Drop whitespace-only text nodes (Markdown soft breaks between images).
+const meaningful = (nodes = []) =>
+  nodes.filter((n) => !(n.type === 'text' && !n.value.trim()))
+
 const markdownComponents = {
+  // Open external links in a new tab; leave in-app links to react-router elsewhere.
   a({ href = '', children, ...props }) {
     const external = /^https?:\/\//.test(href)
     return (
@@ -16,6 +20,38 @@ const markdownComponents = {
         {children}
       </a>
     )
+  },
+
+  // A Markdown image becomes a captioned <figure>: alt text is the caption,
+  // the title string ("...") is the photo credit. Append ?full to the src for
+  // a full-width figure; the default is centered at a comfortable reading width.
+  img({ src = '', alt = '', title }) {
+    const full = /[?&]full\b/.test(src)
+    const clean = src.replace(/[?#].*$/, '')
+    return (
+      <figure className={`content-figure${full ? ' content-figure--full' : ''}`}>
+        <img src={clean} alt={alt} loading="lazy" decoding="async" />
+        {(alt || title) && (
+          <figcaption className="content-figure__caption">
+            {alt}
+            {title && <span className="content-figure__credit">Photo: {title}</span>}
+          </figcaption>
+        )}
+      </figure>
+    )
+  },
+
+  // react-markdown wraps a lone image in <p>, and <figure> inside <p> is invalid.
+  // Unwrap it. Two or three images on consecutive lines (no blank line between)
+  // land in one paragraph — render those as a side-by-side group.
+  p({ node, children }) {
+    const kids = meaningful(node?.children)
+    const imgCount = kids.filter(
+      (k) => k.type === 'element' && k.tagName === 'img',
+    ).length
+    if (imgCount === 0 || imgCount !== kids.length) return <p>{children}</p>
+    if (imgCount === 1) return <>{children}</>
+    return <div className="content-figure content-figure--group">{children}</div>
   },
 }
 
@@ -82,7 +118,7 @@ export default function ContentPage({ section, sectionLabel, slug: slugProp }) {
     )
   }
 
-  const { title, intro, body, resources, placeholder } = doc
+  const { title, intro, body, resources, placeholder, hero } = doc
 
   return (
     <div className="resource-page">
@@ -97,6 +133,15 @@ export default function ContentPage({ section, sectionLabel, slug: slugProp }) {
 
       <div className="resource-page__body">
         <div className="resource-page__body-inner">
+          {hero?.src && (
+            <figure className="content-hero">
+              <img src={hero.src} alt={hero.alt || ''} loading="eager" decoding="async" />
+              {hero.credit && (
+                <figcaption className="content-hero__credit">Photo: {hero.credit}</figcaption>
+              )}
+            </figure>
+          )}
+
           {body && (
             <div className="content-prose">
               {placeholder && (

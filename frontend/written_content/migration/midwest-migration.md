@@ -22,4 +22,6 @@ MMN's main goals are:
 * Understand migratory movements through the region to effectively address conservation challenges.
 * Share information and protocols so that migration data are available to address important research questions at multiple scales.
 
-The network's primary working groups are focused on Bird Banding and Ground Surveys, Radar Monitoring, Telemetry, and the Great Lakes Wind-Wildife Coalition. 
+The network's primary working groups are focused on Bird Banding and Ground Surveys, Radar Monitoring, Telemetry, and the Great Lakes Wind-Wildife Coalition.
+
+![Researchers band and collect morphological data on migratory songbirds at Phillips Tract banding station in Urbana, IL.](/content_images/migration/midwest-migration/banding.webp "Illinois Natural History Survey") 
