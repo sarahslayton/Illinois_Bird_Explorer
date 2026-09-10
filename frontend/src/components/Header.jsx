@@ -22,6 +22,9 @@ export default function Header() {
 
       <Link slot="site-name" to="/">Illinois Bird Explorer</Link>
 
+      {/* Utility "eyebrow" links — hidden for now: none of these have a
+          destination yet. Restore this block (it slots into the ilw-header
+          top strip) once About / Contact / Search pages exist.
       <nav slot="links" aria-label="Utility">
         <ul>
           <li><a href="#">About</a></li>
@@ -29,6 +32,7 @@ export default function Header() {
           <li><a href="#">Search</a></li>
         </ul>
       </nav>
+      */}
 
       <ilw-header-menu slot="navigation">
         <ul>

@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import heroImg from '../assets/hero.jpg'
 import { getContent } from '../data/content'
 
-// Editable copy lives in written_content/home.md. The "Explore the Site" grid
-// below (labels, photos, links) stays defined here on purpose.
+// Editable copy lives in written_content/home.md. For the "Explore the Site"
+// grid, the card TEXT (label / heading / desc) is authored in home.md under
+// `features:`; the structural bits below (route, accent, photo) stay here.
 const home = getContent('home')
 const MISSION_STATEMENT =
   'Illinois is home to over 400 species of birds, from year-round residents to spectacular ' +
@@ -15,64 +16,80 @@ const MISSION_STATEMENT =
 // Toggle to false to instantly revert cards to plain white background
 const SHOW_CARD_PHOTOS = true
 
-const FEATURES = [
+// Structural layout for each card, in grid order. Card text comes from
+// home.md (`features:`, matched on `path`); the strings here are the fallback
+// if that entry is missing.
+const FEATURE_LAYOUT = [
   {
     path: '/bird-species',
+    accent: 'var(--orange)',
+    photo: 'bird-species.jpg',
     label: 'Bird Species',
     heading: 'Discover Illinois Birds',
     desc: 'Explore detailed profiles of over 400 bird species documented across Illinois, including identification guides, habitat information, and seasonal range maps.',
-    accent: 'var(--orange)',
-    photo: 'bird-species.jpg',
   },
   {
     path: '/migration',
+    accent: 'var(--orange)',
+    photo: 'migration.jpg',
     label: 'Migration',
     heading: 'Track Seasonal Movements',
     desc: 'Follow the remarkable journeys of migratory birds through Illinois, from spring arrivals to fall departures, with route maps and peak timing guides.',
-    accent: 'var(--orange)',
-    photo: 'migration.jpg',
   },
   {
     path: '/monitoring',
+    accent: 'var(--orange)',
+    photo: 'monitoring-programs.jpg',
     label: 'Monitoring Programs',
     heading: 'Community Science in Action',
     desc: 'Learn about long-term bird monitoring programs across the state and how citizen science efforts are tracking population changes over decades.',
-    accent: 'var(--orange)',
-    photo: 'monitoring-programs.jpg',
   },
   {
     path: '/conservation',
+    accent: 'var(--orange)',
+    photo: 'conservation.png',
     label: 'Conservation',
     heading: 'Protecting Illinois Habitats',
     desc: 'Understand the conservation challenges facing Illinois birds and explore ongoing efforts to protect the habitats they depend on throughout their life cycles.',
-    accent: 'var(--orange)',
-    photo: 'conservation.png',
   },
   {
     path: '/data-explorer',
+    accent: 'var(--orange)',
+    photo: 'data-explorer.png',
     label: 'Data Explorer',
     heading: 'Explore the Data',
     desc: 'Access interactive maps, population trend charts, and historical records drawn from decades of bird monitoring data collected across Illinois.',
-    accent: 'var(--orange)',
-    photo: 'data-explorer.png',
   },
   {
     path: '/education',
+    accent: 'var(--orange)',
+    photo: 'education.jpg',
     label: 'Education & Volunteers',
     heading: 'Learn and Get Involved',
     desc: 'Find resources for new and experienced birders, connect with volunteer monitoring programs, and discover upcoming events and field trips near you.',
-    accent: 'var(--orange)',
-    photo: 'education.jpg',
   },
   {
     path: '/birdlab',
+    accent: 'var(--orange)',
+    photo: 'illinois-birdlab.png',
     label: 'Illinois BirdLab',
     heading: 'Field Research & Discovery',
     desc: "Explore the research programs, publications, and team behind Illinois BirdLab — advancing scientific understanding of the state's avian communities.",
-    accent: 'var(--orange)',
-    photo: 'illinois-birdlab.png',
   },
 ]
+
+// Overlay the home.md card text onto the layout, matched by `path`.
+const FEATURES = FEATURE_LAYOUT.map((base) => {
+  const copy = (home?.features ?? []).find((f) => f && f.path === base.path)
+  return copy
+    ? {
+        ...base,
+        label: copy.label ?? base.label,
+        heading: copy.heading ?? base.heading,
+        desc: copy.desc ?? base.desc,
+      }
+    : base
+})
 
 export default function HomePage() {
   return (
@@ -117,7 +134,6 @@ export default function HomePage() {
       {/* ── FEATURES ── */}
       <section className="features" aria-labelledby="features-heading">
         <div className="features__inner">
-          <span className="placeholder-label">Placeholder text</span>
           <h2 id="features-heading" className="features__heading">
             {home?.featuresHeading ?? 'Explore the Site'}
           </h2>
@@ -141,7 +157,6 @@ export default function HomePage() {
                 />
                 <div className="feature-card__body">
                   <span className="feature-card__label">{card.label}</span>
-                  <span className="placeholder-label">Placeholder text</span>
                   <h3 className="feature-card__heading">{card.heading}</h3>
                   <p className="feature-card__desc">{card.desc}</p>
                   <span className="feature-card__cta">
