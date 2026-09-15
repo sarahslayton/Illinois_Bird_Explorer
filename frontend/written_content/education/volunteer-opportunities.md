@@ -1,28 +1,51 @@
 ---
 title: Volunteer Opportunities
-placeholder: true
+placeholder: false
 ---
 
-## Spring Bird Count
+## [Spring Bird Count](https://spring-bird-count.inhs.illinois.edu/)
 
-The Illinois Spring Bird Count is a statewide one-day survey conducted each May in which volunteers across all 102 Illinois counties count every bird species seen or heard. It is one of the longest-running statewide bird counts in North America and provides a valuable annual snapshot of breeding and migrating bird populations across Illinois. Participants are organized by county compilers and submit their data to a central database.
+The Illinois Spring Bird Count is one of the longest-running statewide bird counts in North America and provides a valuable annual snapshot of breeding and migrating bird populations across Illinois. This monitoring program is conducted on one day each May, and consists of volunteers across all 102 counties counting every bird species that they see or hear. Participants are organized by county compilers who submit their data to a central database. 
 
-## Audubon Christmas Bird Count
+If you are interested in volunteering in next year's Spring Bird Count, please contact: 
+  
+Tara Beveroth  
+beveroth@illinois.edu  
+(217) 265-7303
 
-The Christmas Bird Count is an annual citizen science survey conducted each winter between December 14 and January 5. Volunteers in local count circles spend a single day counting every bird seen or heard within a 15-mile diameter area. Illinois has dozens of active count circles, with results contributing to over a century of continent-wide population trend data maintained by the National Audubon Society.
+## [Audubon Christmas Bird Count](https://www.audubon.org/community-science/christmas-bird-count)
 
-## MOON — Monitoring of Owls and Nightjars in Illinois
+The Christmas Bird Count is an annual, nationwide community science survey, coordinated by the National Audubon Society, that has been conducted every winter for over a century. Each year, volunteers spend a single day counting every bird seen or heard within a 15-mile diameter circle. 
 
-MOON is a volunteer-based roadside survey program designed to track populations of nocturnal birds — owls and nightjars — across Illinois. Participants drive pre-assigned survey routes at night during the breeding season, stopping at regular intervals to listen for vocalizing birds. The program provides trend data for species that are difficult to monitor through daytime surveys, including Eastern Whip-poor-will, Chuck-will's-widow, and several owl species.
+If you are interested in volunteering in next year's Christmas Bird Count, please contact: 
 
-## Cornell Lab Great Backyard Bird Count
+To view circles in need of additional volunteers, please visit: https://www.audubon.org/community-science/christmas-bird-count/join-or-start-christmas-bird-count
 
-The Great Backyard Bird Count (GBBC) is a free, global citizen science event held each February in which people of all skill levels count the birds they see for as little as 15 minutes over four days. Results are submitted through eBird and contribute to a worldwide snapshot of bird populations in winter. The GBBC is an ideal entry point for new birders and can be conducted from backyards, parks, or any outdoor location.
+## [MOON — Monitoring of Owls and Nightjars in Illinois](https://moon.inhs.illinois.edu/resources/maps/)
 
-## Bird Banding Stations
+MOON is a statewide roadside survey program designed to track populations of nocturnal birds such as owls and nightjars. Volunteers drive pre-assigned survey routes at night during the breeding season, stopping at regular intervals to listen for vocalizing birds. Routes and 9 miles long and have 10 stops per route. The program provides trend data for species that are difficult to monitor through daytime surveys, including Eastern Whip-poor-will, Chuck-will's-widow, and several owl species.
 
-Bird banding is a federally permitted research technique in which small, individually numbered aluminum bands are placed on the legs of wild birds to study survival, movement, behavior, and population trends. Illinois has several active banding stations — particularly along the Lake Michigan shoreline and at inland stopover sites — that capture and band thousands of migratory birds each year. Volunteers assist with net checks, data recording, and bird processing under the supervision of licensed banders.
+If you are interested in volunteering, please contact:  
 
----
+Tara Beveroth  
+beveroth@illinois.edu  
+(217) 265-7303
 
-*Contact details for these programs have not yet been added. Check back soon.*
+## [Cornell Lab Great Backyard Bird Count](https://www.birdcount.org/)
+
+The Great Backyard Bird Count is a free, global citizen science event held each February in which people of all skill levels count the birds they see for as little as 15 minutes over four days. Volunteers submit their sightings through eBird and contribute to a worldwide snapshot of bird populations in winter. The GBBC is an ideal entry point for new birders and can be conducted from backyards, parks, or any outdoor location.
+
+For more information on how to get involved, please visit: https://www.birdcount.org/participate/
+
+## [Chicago Bird Collision Monitors](https://www.birdmonitors.net/)
+
+The Chicago Bird Collision Monitor program is a volunteer run service focused on protecting migratory birds through rescue, advocacy, and outreach programs. Voluteers help recover migratory birds that collide with windows, and transport injured birds to a rehabilitation center. For birds that are killed due to window collisions, volunteers help collect birds, document the locations of collisions, and transport them to the Field Museum or University of Illinois to provide specimens that can help advance research efforts. 
+
+To become a volunteer, please visit: https://www.birdmonitors.net/Volunteer.php
+
+## [Bird Conservation Network](https://www.bcnbirds.org/)
+
+The Bird Conservation Network (BCN) in a coalition of 20+ conservation groups focused on various aspects of avian conservation, primarily throughout the Chicagoland area. This volunteer-run organization actively engages in monitoring programs, population trend assessments, research, advocacy, and education efforts. BCN Survey monitoring volunteers conduct point counts at the same location twice in June and identify all species of birds they see or hear, and enter their data through a specific portal in eBird. 
+
+For more information on how to get involved, please visit: https://www.bcnbirds.org/monitoring/
+

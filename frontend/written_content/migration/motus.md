@@ -2,11 +2,11 @@
 title: MOTUS Wildlife Tracking System
 placeholder: false
 resources:
-  - label: Motus Wildlife Tracking System
+  - label: Motus Data Explorer
     url: https://motus.org
     description: The central hub for Motus data, interactive receiver maps, tag detection records, and research publications.
   - label: Motus Receiver Map — Illinois
-    url: https://motus.org/data/receiversMap
+    url: https://motus.org/dashboard/#f=%7B%7D
     description: Interactive map showing active and historical Motus receiver stations across North America, including Illinois.
   - label: Motus @UIUC
     url: https://ward.nres.illinois.edu/illinois-motus-network/

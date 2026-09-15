@@ -71,7 +71,6 @@ export default function Header() {
                 <li><Link to="/monitoring/spring-bird-count">Spring Bird Count</Link></li>
                 <li><Link to="/monitoring/critical-trends">Critical Trends Assessment Program</Link></li>
                 <li><Link to="/monitoring/upland-game-surveys">Upland Game Bird Surveys</Link></li>
-                <li><Link to="/monitoring/upland-hunting-forecast">2025–2026 Upland Hunting Forecast</Link></li>
                 <li><Link to="/monitoring/natural-heritage-database">Illinois Natural Heritage Database</Link></li>
               </ul>
             </ilw-header-menu-section>

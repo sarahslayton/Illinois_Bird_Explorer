@@ -30,7 +30,6 @@ const NAV_ITEMS = [
       { label: 'Spring Bird Count', path: '/monitoring/spring-bird-count' },
       { label: 'Critical Trends Assessment Program', path: '/monitoring/critical-trends' },
       { label: 'Upland Game Bird Surveys', path: '/monitoring/upland-game-surveys' },
-      { label: '2025–2026 Upland Hunting Forecast', path: '/monitoring/upland-hunting-forecast' },
       { label: 'Illinois Natural Heritage Database', path: '/monitoring/natural-heritage-database' },
     ],
   },

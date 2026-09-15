@@ -1,36 +1,17 @@
 ---
 title: BirdCast
 updated: 2026-09-03
-placeholder: true
+placeholder: false
 resources:
   - label: BirdCast
     url: https://birdcast.info
     description: Live migration maps, local migration alerts, and nightly migration forecasts for locations across the United States.
-  - label: BirdCast Local Migration Explorer
-    url: https://birdcast.info/migration-tools/local-migration-explorer/
+  - label: BirdCast Migration Maps
+    url: https://birdcast.org/migration-tools/live-migration-maps/
     description: Explore historical migration intensity at any location — useful for putting counts at specific Illinois sites in context.
   - label: Cornell Lab of Ornithology
     url: https://www.birds.cornell.edu
     description: BirdCast is a project of the Cornell Lab, in partnership with Colorado State University and UMass Amherst.
-  - label: BirdCast on GitHub
-    url: https://github.com/birdcast
-    description: Open data and code associated with the BirdCast project.
+
 ---
-Birdcast is a weather-radar and machine-learning tool that detects, measures, and forecasts nocturnal bird migration across the United States in near real time. 
-
-BirdCast translates the "clutter" in weather-surveillance radar data — much of
-which is actually flying birds — into estimates of how many birds are aloft,
-which direction they are heading, and at what altitude. Those measurements feed
-machine-learning models that produce nightly **migration forecasts** three days
-out, alongside live maps of migration as it happens.
-
-## Using it in Illinois
-
-Because Illinois sits in the Mississippi Flyway, BirdCast's regional forecasts
-give birders and land managers advance notice of high-migration nights and help
-explain why a given morning produced a fallout — or didn't. Pair the forecasts
-with local eBird effort to see how radar-scale movement lines up with what shows
-up on the ground.
-
-<!-- Replace the sections above with the real page copy, then delete
-     `placeholder: true` from the frontmatter. -->
+BirdCast is a tool developed by the Cornell Lab of Ornithology, in collaboration with researchers from University of Massachusetts, Amherst, Purdue University, and University of Illinois, Urbana-Champaign, to forecast the number of birds migrating on a daily basis based on weather radar data. Users can access live migration maps that help visualize the timing, direction, and location of nocturnally migrating birds, and predict the number of birds migrating across different areas in real-time. These forecasts can be used to advance our scientific understanding of bird migration, predict major migration events, and guide conservation efforts to reduce threats to migrating birds such as bird-window collisions. 

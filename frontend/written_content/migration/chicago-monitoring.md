@@ -2,12 +2,9 @@
 title: Chicago Bird Migration Monitoring Network 
 placeholder: false
 resources:
-  - label: Chicago Bird Migration Monitoring Website
+  - label: Chicago Bird Migration Monitoring Website and Dashboard
     url: https://www.migrationbiology.org/chicago-bird-migration-monitoring-network
-    description: Official website for the Chicago Bird Migration Monitoring Network
-  - label: Chicago Bird Migration Dashboard
-    url: https://chicagobirdmigration.net/
-    description: Interactive dashboard that showcases the latest bird migration data from their live network of acoustic monitoring devices across Chicagoland.
+    description: Official website for the Chicago Bird Migration Monitoring Network, including an interactive dashboard that showcases the latest bird migration data from their live network of acoustic monitoring devices across Chicagoland.
   - label: Van Doren Lab Website
     url: https://www.migrationbiology.org/
     description: The official lab website of Dr. Benjamin Van Doren, Principal Investigator of the Chicago Bird Migration Monitoring Network
