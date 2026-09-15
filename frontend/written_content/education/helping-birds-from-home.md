@@ -33,7 +33,7 @@ Window collisions kill an estimated 600 million to 1 billion birds in the United
 
 ## Bird Feeder Tips
 
-Bird feeders can provide an important supplemental food source for birds, particularly during winter when natural food supplies are scarce. They also offer unmatched opportunities for close observation and engagement with local bird communities. To maximize benefit and minimize harm, feeders should be kept clean to prevent disease transmission, placed where they minimize collision risk (either very close to or very far from windows), and stocked with appropriate seeds for the species you hope to attract. This section will cover feeder types, seed selection, placement and maintenance best practices, and guidance on which species to expect at feeders across different regions and seasons in Illinois.
+Bird feeders can provide an important supplemental food source for birds, particularly during winter when natural food supplies are scarce. They also offer unmatched opportunities for close observation and engagement with local bird communities. To maximize benefit and minimize harm, feeders should be kept clean to prevent disease transmission, placed where they minimize collision risk (either very close to or very far from windows), and stocked with appropriate seeds for the species you hope to attract. 
 
 ### Additional Resources
 [Bird Feeding and Care - National Audubon Society](https://www.audubon.org/birding/backyard)  
