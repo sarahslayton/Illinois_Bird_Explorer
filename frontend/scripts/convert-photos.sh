@@ -12,6 +12,10 @@
 #         -> public/species_photos/<slug>.webp            (full, long edge <=1500, q80)
 #         -> public/species_photos/thumb/<slug>.webp      (thumb, long edge <=600,  q78)
 #
+#   scripts/convert-photos.sh main-all
+#       every <slug>.jpg under species_account_files/main_photos/ (batch).
+#       Re-encodes from the .jpg sources each run; overwriting is harmless.
+#
 #   scripts/convert-photos.sh additional <slug>
 #       species_account_files/additional_photos/<slug>/*.jpg
 #         -> public/species_photos/additional/<slug>/*.webp
@@ -53,13 +57,28 @@ fi
 full()  { "$MAGICK" mogrify -path "$1" -format webp -quality 80 -strip -colorspace sRGB -resize "1500x1500>" $2; }
 thumb() { "$MAGICK" mogrify -path "$1" -format webp -quality 78 -strip -colorspace sRGB -resize "600x600>"   $2; }
 
+main_slug() {
+  local s="$1" src="species_account_files/main_photos/$1.jpg"
+  mkdir -p public/species_photos/thumb
+  full  "public/species_photos"        "$src"
+  thumb "public/species_photos/thumb"  "$src"
+  echo "  converted $s"
+}
+
 case "$cmd" in
   main)
     src="species_account_files/main_photos/$key.jpg"
     [[ -f "$src" ]] || { echo "not found: $src" >&2; exit 1; }
-    mkdir -p public/species_photos/thumb
-    full  "public/species_photos"       "$src"
-    thumb "public/species_photos/thumb"  "$src"
+    main_slug "$key"
+    ;;
+  main-all)
+    root="species_account_files/main_photos"
+    [[ -d "$root" ]] || { echo "not found: $root/" >&2; exit 1; }
+    compgen -G "$root/*.jpg" >/dev/null || echo "no .jpg files in $root/"
+    for f in "$root"/*.jpg; do
+      [[ -f "$f" ]] || continue
+      main_slug "$(basename "$f" .jpg)"
+    done
     ;;
   additional)
     src="species_account_files/additional_photos/$key"
@@ -91,7 +110,7 @@ case "$cmd" in
     full "$dst" "$src/*.jpg"
     ;;
   *)
-    echo "unknown command: $cmd (expected: main | additional | additional-all | content)" >&2
+    echo "unknown command: $cmd (expected: main | main-all | additional | additional-all | content)" >&2
     exit 2
     ;;
 esac

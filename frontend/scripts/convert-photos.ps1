@@ -10,6 +10,10 @@
           -> public\species_photos\<slug>.webp           (full,  long edge <=1500, q80)
           -> public\species_photos\thumb\<slug>.webp      (thumb, long edge <=600,  q78)
 
+    scripts\convert-photos.ps1 main-all
+        every <slug>.jpg under species_account_files\main_photos\ (batch).
+        Re-encodes from the .jpg sources each run; overwriting is harmless.
+
     scripts\convert-photos.ps1 additional <slug>
         species_account_files\additional_photos\<slug>\*.jpg
           -> public\species_photos\additional\<slug>\*.webp
@@ -34,7 +38,7 @@
 #>
 [CmdletBinding()]
 param(
-  [Parameter(Mandatory)][ValidateSet('main', 'additional', 'additional-all', 'content')][string]$Mode,
+  [Parameter(Mandatory)][ValidateSet('main', 'main-all', 'additional', 'additional-all', 'content')][string]$Mode,
   [string]$Key
 )
 
@@ -62,6 +66,16 @@ if (-not $magick) {
 function Convert-Full  { param($Dst, $In) & $magick mogrify -path $Dst -format webp -quality 80 -strip -colorspace sRGB -resize '1500x1500>' $In }
 function Convert-Thumb { param($Dst, $In) & $magick mogrify -path $Dst -format webp -quality 78 -strip -colorspace sRGB -resize '600x600>'  $In }
 
+# One species' main photo -> full + thumb webp. Shared by 'main' and 'main-all'.
+function Convert-MainSlug {
+  param([string]$Slug)
+  $src = "species_account_files\main_photos\$Slug.jpg"
+  New-Item -ItemType Directory -Force -Path 'public\species_photos\thumb' | Out-Null
+  Convert-Full  'public\species_photos'       $src
+  Convert-Thumb 'public\species_photos\thumb' $src
+  Write-Host "  converted $Slug"
+}
+
 # One species' additional-photos folder -> full + thumb webp. Shared by
 # 'additional' and 'additional-all'.
 function Convert-AdditionalSlug {
@@ -83,9 +97,14 @@ switch ($Mode) {
   'main' {
     $src = "species_account_files\main_photos\$Key.jpg"
     if (-not (Test-Path -LiteralPath $src)) { throw "not found: $src" }
-    New-Item -ItemType Directory -Force -Path 'public\species_photos\thumb' | Out-Null
-    Convert-Full  'public\species_photos'       $src
-    Convert-Thumb 'public\species_photos\thumb' $src
+    Convert-MainSlug $Key
+  }
+  'main-all' {
+    $root = 'species_account_files\main_photos'
+    if (-not (Test-Path -LiteralPath $root -PathType Container)) { throw "not found: $root\" }
+    $files = Get-ChildItem -LiteralPath $root -Filter *.jpg -File
+    if (-not $files) { Write-Host "no .jpg files in $root\" }
+    foreach ($f in $files) { Convert-MainSlug $f.BaseName }
   }
   'additional' {
     Convert-AdditionalSlug $Key

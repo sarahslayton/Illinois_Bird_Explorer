@@ -34,6 +34,10 @@ function toSpecies(row) {
     // A "full" species has a photo and a written account: real card, clickable,
     // detail page. Everything else shows as a non-clickable placeholder card.
     full: row.Has_photo === 'Y' && row.Has_species_account === 'Y',
+    // Photo may exist ahead of the account — shows the real photo on the
+    // (still non-clickable) placeholder card so it's visible which species
+    // already have a main photo.
+    hasPhoto: row.Has_photo === 'Y',
   }
 }
 

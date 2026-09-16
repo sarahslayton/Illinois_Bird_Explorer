@@ -713,7 +713,7 @@ ilw-header {
   opacity: 0;
 }
 
-/* Placeholder card — species with no photo/account yet. Not a link. */
+/* Placeholder card — no account yet (may still have a photo). Not a link. */
 .species-card--placeholder {
   cursor: default;
 }
@@ -902,11 +902,13 @@ ilw-header {
   gap: var(--sp-2);
   flex-wrap: wrap;
 }
-/* On the navy hero the tinted card colors don't read — use orange for every label. */
+/* On the navy hero the tinted card colors don't read — use orange for every label.
+   Set the full border (not just border-color) so badges whose base rule has no
+   border (e.g. Breeder, Migrant) match the ones that do (e.g. Rare Breeder). */
 .species-overview__badges .species-badge {
   color: var(--orange);
   background: rgba(255, 95, 5, 0.14);
-  border-color: rgba(255, 95, 5, 0.4);
+  border: 1px solid rgba(255, 95, 5, 0.4);
 }
 
 /* Secondary nav */

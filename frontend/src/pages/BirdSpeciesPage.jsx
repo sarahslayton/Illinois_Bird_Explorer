@@ -6,7 +6,7 @@ function CardInner({ s }) {
   return (
     <>
       <div className="species-card__photo-wrap">
-        {s.full ? (
+        {s.hasPhoto ? (
           <img
             className="species-card__photo"
             src={`/species_photos/thumb/${s.photo}.webp`}
@@ -23,16 +23,14 @@ function CardInner({ s }) {
             }}
           />
         ) : (
-          <>
-            <img
-              className="species-card__silhouette"
-              src="/species_photos/placeholder_bird.svg"
-              alt=""
-              aria-hidden="true"
-            />
-            <span className="species-card__coming-soon">Species Account Coming Soon!</span>
-          </>
+          <img
+            className="species-card__silhouette"
+            src="/species_photos/placeholder_bird.svg"
+            alt=""
+            aria-hidden="true"
+          />
         )}
+        {!s.full && <span className="species-card__coming-soon">Species Account Coming Soon!</span>}
       </div>
       <div className="species-card__body">
         <p className="species-card__common">{s.common}</p>
