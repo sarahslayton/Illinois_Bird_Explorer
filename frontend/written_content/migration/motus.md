@@ -8,7 +8,7 @@ resources:
   - label: Motus Receiver Map — Illinois
     url: https://motus.org/dashboard/#f=%7B%7D
     description: Interactive map showing active and historical Motus receiver stations across North America, including Illinois.
-  - label: Motus @UIUC
+  - label: Illinois Motus Network
     url: https://ward.nres.illinois.edu/illinois-motus-network/
     description: Further details about the use of the MOTUS system in bird migration research conducted by labs and the University of Illinois, Urbana-Champaign and collaborators.
 ---
@@ -16,6 +16,6 @@ resources:
 
 The first Motus stations in Illinois were placed in 2020. After years of planning and installing Motus stations, there are now three fully functional fences of Motus stations placed latitudinally in Illinois. The northern fence runs from Galena, IL to Chicago, IL along the Wisconsin-Illinois border. The central fence runs from Quincy, IL to Danville, IL paralleling I-72. The southern fence runs from St. Louis, MO to Evansville, IN just south of the I-64 corridor. Other stations can be found along the Illinois River Valley and Lake Michigan shoreline among other spots, and the stations are positioned approximately 15-20 miles apart to increase the likelihood that a migrating bird will be detected as it flies across the state. There are currently (May 2026) 45 Motus stations in Illinois.
 
-Each year, approximately 100 tags have been deployed on birds (Northern Saw-whet Owl, Wood Thrush, migratory songbirds, etc.).  Some tags have lifespans of a couple weeks while others may have lifespans of a couple years. Many more tags are deployed  on other species outside the state. All of these tags have the potential to be detected by towers in Illinois—especially during spring or fall migrations. 
+Each year, approximately 100 tags have been deployed on birds (Northern Saw-whet Owl, Wood Thrush, migratory songbirds, etc.).  Some tags have lifespans of a couple weeks while others may have lifespans of a couple years. Many more tags are deployed  on other species outside the state. All of these tags have the potential to be detected by towers in Illinois, especially during spring or fall migrations. 
 
-Understanding bird migration and movement patterns more generally allows us make better informed and effective conservation decisions. It allows us to better protect migration corridors as we can help minimize mortality risks to heavily trafficked areas. It also helps us understand what breeding and wintering habitats should be protected—especially for sensitive species and those in decline.
+Understanding bird migration and movement patterns more generally allows researchers and land managers to make better informed and effective conservation decisions. For example, this data can be used to identify important migration corridors to help minimize mortality risks to heavily trafficked areas, and identify declining species' breeding and wintering habitats that should be prioritized for protection.

@@ -5,7 +5,9 @@ placeholder: false
 
 ## [Spring Bird Count](https://spring-bird-count.inhs.illinois.edu/)
 
-The Illinois Spring Bird Count is one of the longest-running statewide bird counts in North America and provides a valuable annual snapshot of breeding and migrating bird populations across Illinois. This monitoring program is conducted on one day each May, and consists of volunteers across all 102 counties counting every bird species that they see or hear. Participants are organized by county compilers who submit their data to a central database. 
+The Spring Bird Count (SBC) is an annual bird count conducted by volunteers on the Saturday between May 4 and May 10. The censuses are conducted in all 102 counties in Illinois; however, in any given year, a few counties are not censused. 
+
+These counties are in need of more volunteers: 
 
 If you are interested in volunteering in next year's Spring Bird Count, please contact: 
   

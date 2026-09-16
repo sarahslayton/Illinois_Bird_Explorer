@@ -1,6 +1,6 @@
 ---
 title: North American Breeding Bird Survey
-placeholder: true
+placeholder: false
 resources:
   - label: North American Breeding Bird Survey — USGS
     url: https://www.usgs.gov/centers/eesc/science/north-american-breeding-bird-survey
@@ -11,4 +11,4 @@ resources:
   
 ---
 
-The North American Breeding Bird Survey (BBS) is one of the most important long-term bird monitoring programs in the world. Coordinated since 1966 by the U.S. Geological Survey and Environment and Climate Change Canada, the BBS relies on trained volunteer observers who drive standardized roadside routes each June — the peak of the breeding season — counting every bird seen or heard within a quarter-mile of the road at stops spaced half a mile apart. Across more than 5,000 active routes in North America, the program generates annual abundance estimates for hundreds of species. Illinois routes contribute directly to continental trend analyses that inform conservation priorities, identify species of concern, and measure the effectiveness of habitat management programs.
+The North American Breeding Bird Survey (BBS) is a long-term monitoring program across the U.S., Canada, and Mexico. Each year since 1966, highly skilled amateur and professional biologists conduct roadside surveys across approximately 3,000 routes that were originally established by the U.G. Geological Service at the Patuxent Wildlife Research Center. Each route is approximately 25 miles long, and broken up into 50 stop locations that are about ½ mile apart. At each stop, monitors conduct a 3 minute survey or “point count,” where they record every species of bird that they see or hear. There are 101 routes in Illinois, and volunteers conduct their surveys between late May and early July to capture birds that are actively breeding. This program provides extremely important long-term data on the abundance and status of breeding birds in Illinois, and helps identify which species’ populations are increasing or declining over time. 
