@@ -19,7 +19,7 @@ The following bird species are listed as Endangered or Threatened under the Illi
 | American Bittern | *Botaurus lentiginosus* | Endangered | |
 | Bewick's Wren | *Thryomanes bewickii* | Endangered | |
 | Black-billed Cuckoo | *Coccyzus erythropthalmus* | Threatened | |
-| Black-crowned Night Heron | *Nycticorax nycticorax* | Endangered | |
+| [Black-crowned Night Heron](/bird-species/black_crowned_night_heron) | *Nycticorax nycticorax* | Endangered | |
 | Black Rail | *Laterallus jamaicensis* | Endangered | |
 | [Black Tern](/bird-species/black_tern) | *Chlidonias niger* | Endangered | |
 | Cerulean Warbler | *Setophaga cerulea* | Threatened | |

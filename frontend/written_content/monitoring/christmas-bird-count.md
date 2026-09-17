@@ -5,7 +5,7 @@ resources:
   - label: Audubon Christmas Bird Count Official Website 
     url: https://www.audubon.org/conservation/christmas-bird-count
     description: National Audubon Society program page with count history, results, and how to participate.
-  - label: Christmas Bird Coutn Summaries
+  - label: Christmas Bird Count Summaries
     url: https://www.audubon.org/community-science/christmas-bird-count/annual-summaries-of-christmas-bird-count-1901-present
     description: Access summaries from historical Christmas Bird Counts going back to 1929. 
 

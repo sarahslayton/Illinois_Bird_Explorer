@@ -17,7 +17,11 @@ const SHOW_CARD_PHOTOS = true
 
 // Structural layout for each card, in grid order. Card text comes from
 // home.md (`features:`, matched on `path`); the strings here are the fallback
-// if that entry is missing.
+// if that entry is missing. `path` is a stable matching key (must stay in
+// sync with home.md — don't change it); `link` is the actual click
+// destination and defaults to `path` when omitted. Migration/Education/
+// Conservation/BirdLab have no section landing page (dropdown-only nav), so
+// their cards `link` into a specific sub-page instead of a dead-end index.
 const FEATURE_LAYOUT = [
   {
     path: '/bird-species',
@@ -29,6 +33,7 @@ const FEATURE_LAYOUT = [
   },
   {
     path: '/migration',
+    link: '/migration/hotspots',
     accent: 'var(--orange)',
     photo: 'migration.webp',
     label: 'Migration',
@@ -45,6 +50,7 @@ const FEATURE_LAYOUT = [
   },
   {
     path: '/conservation',
+    link: '/conservation/major-issues',
     accent: 'var(--orange)',
     photo: 'conservation.webp',
     label: 'Conservation',
@@ -61,6 +67,7 @@ const FEATURE_LAYOUT = [
   },
   {
     path: '/education',
+    link: '/education/volunteer-opportunities',
     accent: 'var(--orange)',
     photo: 'education.webp',
     label: 'Education & Volunteers',
@@ -69,6 +76,7 @@ const FEATURE_LAYOUT = [
   },
   {
     path: '/birdlab',
+    link: '/birdlab/current-research',
     accent: 'var(--orange)',
     photo: 'illinois-birdlab.webp',
     label: 'Illinois BirdLab',
@@ -142,7 +150,7 @@ export default function HomePage() {
           <div className="features__grid">
             {FEATURES.map((card) => (
               <Link
-                to={card.path}
+                to={card.link ?? card.path}
                 key={card.path}
                 className={`feature-card${SHOW_CARD_PHOTOS && card.photo ? ' feature-card--photo' : ''}`}
                 style={SHOW_CARD_PHOTOS && card.photo
