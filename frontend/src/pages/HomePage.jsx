@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import heroImg from '../assets/hero.jpg'
 import { getContent } from '../data/content'
 
 // Editable copy lives in written_content/home.md. For the "Explore the Site"
@@ -98,7 +97,7 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section
         className="hero"
-        style={{ backgroundImage: `url(${heroImg})` }}
+        style={{ backgroundImage: 'url(/species_photos/home/hero.webp)' }}
         aria-label="Illinois Bird Explorer hero"
       >
         <div className="hero__noise" aria-hidden="true" />
