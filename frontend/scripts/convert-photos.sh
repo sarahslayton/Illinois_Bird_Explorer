@@ -29,13 +29,19 @@
 #       content_images_src/<section>/<slug>/*.jpg
 #         -> public/content_images/<section>/<slug>/*.webp   (full only, no thumbs)
 #
+#   scripts/convert-photos.sh home-all
+#       species_account_files/home_photos_src/*.jpg / *.png (batch, flat folder)
+#         -> public/species_photos/home/*.webp   (full only, no thumbs)
+#       Home page "Explore the Site" feature-card photos. Re-encodes from
+#       source each run; overwriting is harmless.
+#
 set -euo pipefail
 cd "$(dirname "$0")/.."            # -> frontend/
 
 cmd=${1:-}
 key=${2:-}
 if [[ -z "$cmd" ]] || { [[ "$cmd" != *-all ]] && [[ -z "$key" ]]; }; then
-  sed -n '2,34p' "$0" >&2
+  sed -n '2,37p' "$0" >&2
   exit 2
 fi
 
@@ -109,8 +115,22 @@ case "$cmd" in
     mkdir -p "$dst"
     full "$dst" "$src/*.jpg"
     ;;
+  home-all)
+    root="species_account_files/home_photos_src"
+    [[ -d "$root" ]] || { echo "not found: $root/" >&2; exit 1; }
+    dst="public/species_photos/home"
+    mkdir -p "$dst"
+    shopt -s nullglob
+    files=("$root"/*.jpg "$root"/*.png)
+    shopt -u nullglob
+    [[ ${#files[@]} -gt 0 ]] || echo "no .jpg/.png files in $root/"
+    for f in "${files[@]}"; do
+      full "$dst" "$f"
+      echo "  converted $(basename "$f")"
+    done
+    ;;
   *)
-    echo "unknown command: $cmd (expected: main | main-all | additional | additional-all | content)" >&2
+    echo "unknown command: $cmd (expected: main | main-all | additional | additional-all | content | home-all)" >&2
     exit 2
     ;;
 esac

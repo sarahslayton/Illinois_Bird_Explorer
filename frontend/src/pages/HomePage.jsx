@@ -23,7 +23,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/bird-species',
     accent: 'var(--orange)',
-    photo: 'bird-species.jpg',
+    photo: 'bird-species.webp',
     label: 'Bird Species',
     heading: 'Discover Illinois Birds',
     desc: 'Explore detailed profiles of over 400 bird species documented across Illinois, including identification guides, habitat information, and seasonal range maps.',
@@ -31,7 +31,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/migration',
     accent: 'var(--orange)',
-    photo: 'migration.jpg',
+    photo: 'migration.webp',
     label: 'Migration',
     heading: 'Track Seasonal Movements',
     desc: 'Follow the remarkable journeys of migratory birds through Illinois, from spring arrivals to fall departures, with route maps and peak timing guides.',
@@ -39,7 +39,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/monitoring',
     accent: 'var(--orange)',
-    photo: 'monitoring-programs.jpg',
+    photo: 'monitoring-programs.webp',
     label: 'Monitoring Programs',
     heading: 'Community Science in Action',
     desc: 'Learn about long-term bird monitoring programs across the state and how citizen science efforts are tracking population changes over decades.',
@@ -47,7 +47,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/conservation',
     accent: 'var(--orange)',
-    photo: 'conservation.png',
+    photo: 'conservation.webp',
     label: 'Conservation',
     heading: 'Protecting Illinois Habitats',
     desc: 'Understand the conservation challenges facing Illinois birds and explore ongoing efforts to protect the habitats they depend on throughout their life cycles.',
@@ -55,7 +55,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/data-explorer',
     accent: 'var(--orange)',
-    photo: 'data-explorer.png',
+    photo: 'data-explorer.webp',
     label: 'Data Explorer',
     heading: 'Explore the Data',
     desc: 'Access interactive maps, population trend charts, and historical records drawn from decades of bird monitoring data collected across Illinois.',
@@ -63,7 +63,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/education',
     accent: 'var(--orange)',
-    photo: 'education.jpg',
+    photo: 'education.webp',
     label: 'Education & Volunteers',
     heading: 'Learn and Get Involved',
     desc: 'Find resources for new and experienced birders, connect with volunteer monitoring programs, and discover upcoming events and field trips near you.',
@@ -71,7 +71,7 @@ const FEATURE_LAYOUT = [
   {
     path: '/birdlab',
     accent: 'var(--orange)',
-    photo: 'illinois-birdlab.png',
+    photo: 'illinois-birdlab.webp',
     label: 'Illinois BirdLab',
     heading: 'Field Research & Discovery',
     desc: "Explore the research programs, publications, and team behind Illinois BirdLab — advancing scientific understanding of the state's avian communities.",

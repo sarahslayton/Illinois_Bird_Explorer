@@ -27,6 +27,12 @@
         content_images_src\<section>\<slug>\*.jpg
           -> public\content_images\<section>\<slug>\*.webp   (full only, no thumbs)
 
+    scripts\convert-photos.ps1 home-all
+        species_account_files\home_photos_src\*.jpg / *.png (batch, flat folder)
+          -> public\species_photos\home\*.webp   (full only, no thumbs)
+        Home page "Explore the Site" feature-card photos. Re-encodes from
+        source each run; overwriting is harmless.
+
   This script OWNS everything it writes under public\ — never hand-place
   converted images there.
 
@@ -38,7 +44,7 @@
 #>
 [CmdletBinding()]
 param(
-  [Parameter(Mandatory)][ValidateSet('main', 'main-all', 'additional', 'additional-all', 'content')][string]$Mode,
+  [Parameter(Mandatory)][ValidateSet('main', 'main-all', 'additional', 'additional-all', 'content', 'home-all')][string]$Mode,
   [string]$Key
 )
 
@@ -122,6 +128,18 @@ switch ($Mode) {
     $dst = "public\content_images\$Key"
     New-Item -ItemType Directory -Force -Path $dst | Out-Null
     Convert-Full $dst "$src\*.jpg"
+  }
+  'home-all' {
+    $root = 'species_account_files\home_photos_src'
+    if (-not (Test-Path -LiteralPath $root -PathType Container)) { throw "not found: $root\" }
+    $files = @(Get-ChildItem -LiteralPath $root -Filter *.jpg -File) + @(Get-ChildItem -LiteralPath $root -Filter *.png -File)
+    if (-not $files) { Write-Host "no .jpg/.png files in $root\" }
+    $dst = 'public\species_photos\home'
+    New-Item -ItemType Directory -Force -Path $dst | Out-Null
+    foreach ($f in $files) {
+      Convert-Full $dst $f.FullName
+      Write-Host "  converted $($f.Name)"
+    }
   }
 }
 
