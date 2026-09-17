@@ -10,7 +10,6 @@ import SpeciesDetailPage from './pages/SpeciesDetailPage'
 import ContentPage from './pages/ContentPage'
 import ExtinctBirdsPage from './pages/ExtinctBirdsPage'
 import ExtinctSpeciesOverviewPage from './pages/ExtinctSpeciesOverviewPage'
-import DataExplorerPage from './pages/DataExplorerPage'
 
 function AppLayout() {
   const { pathname } = useLocation()
@@ -43,7 +42,7 @@ function AppLayout() {
           <Route path="/conservation/extinct-birds/:slug" element={<ExtinctSpeciesOverviewPage />} />
           <Route path="/conservation/:slug"              element={<ContentPage section="conservation" sectionLabel="Conservation" />} />
 
-          <Route path="/data-explorer" element={<DataExplorerPage />} />
+          <Route path="/data-explorer" element={<ContentPage section="data-explorer" sectionLabel="Data Explorer" />} />
         </Routes>
       </main>
       <Footer />

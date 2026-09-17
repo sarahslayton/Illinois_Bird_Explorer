@@ -1,35 +1,47 @@
 ---
 title: Endangered Species Protection Board
-placeholder: true
+placeholder: false
 ---
 
 ## About the Board
 
-Detailed information about the Illinois Endangered Species Protection Board will be added here.
+The Illinois Endangered Species Protection Board is responsible for reviewing and revising the Illinois Endangered and Threatened Species List. The Board meets at a minimum every five years to review the list, and the most recent review was in 2025. Species are listed or delisted in coordination with the Illinois Department of Natural Resources. In Illinois, the term "endangered" is used to describe species that are in danger of extinction in the wild in Illinois. "Threatened" species are likely to become endangered in Illinois in the foreseeable future. 
+
+Endangered and threatened species have the following protections under Illinois State Law:  
+ 
 
 ## 2025 Illinois Endangered and Threatened Bird Species
 
-The following bird species are listed as Endangered or Threatened under the Illinois Endangered Species Protection Act. This list is subject to revision; consult the Illinois DNR for the most current official list.
+The following bird species are listed as Endangered or Threatened under the Illinois Endangered Species Protection Act. 
 
-| Common Name | Scientific Name | Illinois Status |
-| --- | --- | --- |
-| American Bittern | *Botaurus lentiginosus* | Endangered |
-| Barn Owl | *Tyto alba* | Endangered |
-| Bell's Vireo | *Vireo bellii* | Endangered |
-| Bewick's Wren | *Thryomanes bewickii* | Endangered |
-| Black-crowned Night-Heron | *Nycticorax nycticorax* | Endangered |
-| Black Tern | *Chlidonias niger* | Endangered |
-| Cerulean Warbler | *Setophaga cerulea* | Endangered |
-| Henslow's Sparrow | *Centronyx henslowii* | Endangered |
-| King Rail | *Rallus elegans* | Endangered |
-| Least Bittern | *Ixobrychus exilis* | Endangered |
-| Loggerhead Shrike | *Lanius ludovicianus* | Endangered |
-| Mississippi Kite | *Ictinia mississippiensis* | Endangered |
-| Prairie Warbler | *Setophaga discolor* | Endangered |
-| Short-eared Owl | *Asio flammeus* | Endangered |
-| Yellow-headed Blackbird | *Xanthocephalus xanthocephalus* | Endangered |
-| Brown Creeper | *Certhia americana* | Threatened |
-| Louisiana Waterthrush | *Parkesia motacilla* | Threatened |
-| Northern Harrier | *Circus hudsonius* | Threatened |
-| Red-shouldered Hawk | *Buteo lineatus* | Threatened |
-| Sandhill Crane | *Antigone canadensis* | Threatened |
+| Common Name | Scientific Name | Illinois Status | Federal Status |
+| --- | --- | --- | --- |
+| American Bittern | *Botaurus lentiginosus* | Endangered | |
+| Bewick's Wren | *Thryomanes bewickii* | Endangered | |
+| Black-billed Cuckoo | *Coccyzus erythropthalmus* | Threatened | |
+| Black-crowned Night Heron | *Nycticorax nycticorax* | Endangered | |
+| Black Rail | *Laterallus jamaicensis* | Endangered | |
+| [Black Tern](/bird-species/black_tern) | *Chlidonias niger* | Endangered | |
+| Cerulean Warbler | *Setophaga cerulea* | Threatened | |
+| Chuck-will's-widow | *Antrostomus carolinensis* | Threatened | |
+| Common Gallinule | *Gallinula galeata* | Endangered | |
+| Common Tern | *Sterna hirundo* | Endangered | |
+| Forster's Tern | *Sterna forsteri* | Endangered | |
+| Greater Prairie-Chicken | *Tympanuchus cupido* | Endangered | |
+| King Rail | *Rallus elegans* | Endangered | |
+| Least Bittern | *Ixobrychus exilis* | Threatened | |
+| Least Tern | *Sternula antillarum* | Endangered | |
+| Little Blue Heron | *Egretta caerulea* | Endangered | |
+| Loggerhead Shrike | *Lanius ludovicianus* | Endangered | |
+| Northern Harrier | *Circus hudsonius* | Endangered | |
+| [Osprey](/bird-species/osprey) | *Pandion haliaetus* | Threatened | |
+| Piping Plover | *Charadrius melodus* | Endangered | Federally Endangered |
+| Rufa Red Knot | *Calidris canutus rufa* | Threatened | Federally Threatened |
+| Short-eared Owl | *Asio flammeus* | Endangered | |
+| [Snowy Egret](/bird-species/snowy_egret) | *Egretta thula* | Endangered | |
+| Swainson's Hawk | *Buteo swainsoni* | Endangered | |
+| Swainson's Warbler | *Limnothlypis swainsonii* | Endangered | |
+| Upland Sandpiper | *Bartramia longicauda* | Endangered | |
+| Wilson's Phalarope | *Phalaropus tricolor* | Endangered | |
+| Yellow-crowned Night Heron | *Nyctanassa violacea* | Endangered | |
+| Yellow-headed Blackbird | *Xanthocephalus xanthocephalus* | Endangered | |

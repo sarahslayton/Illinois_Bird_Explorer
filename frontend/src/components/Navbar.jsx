@@ -47,11 +47,7 @@ const NAV_ITEMS = [
   {
     label: 'Data Explorer',
     path: '/data-explorer',
-    dropdown: [
-      { label: 'Christmas Bird Count', path: '#' },
-      { label: 'Spring Bird Count', path: '#' },
-      { label: 'North American Breeding Bird Survey', path: '#' },
-    ],
+    dropdown: [],
   },
   {
     label: 'Education',

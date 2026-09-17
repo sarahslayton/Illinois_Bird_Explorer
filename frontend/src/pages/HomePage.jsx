@@ -119,7 +119,7 @@ export default function HomePage() {
       {/* ── MISSION ── */}
       <section className="mission" aria-labelledby="mission-heading">
         <div className="mission__inner">
-          <span className="placeholder-label">Placeholder text</span>
+          {home?.placeholder && <span className="placeholder-label">Placeholder text</span>}
           <span className="mission__kicker">{home?.missionKicker ?? 'Our Mission'}</span>
           <h2 id="mission-heading" className="mission__heading">
             {home?.missionHeading ?? 'Connecting People with Illinois Birds'}

@@ -92,11 +92,6 @@ export default function Header() {
           <li>
             <ilw-header-menu-section linked="true">
               <Link slot="link" to="/data-explorer">Data Explorer</Link>
-              <ul>
-                <li><a href="#">Christmas Bird Count</a></li>
-                <li><a href="#">Spring Bird Count</a></li>
-                <li><a href="#">North American Breeding Bird Survey</a></li>
-              </ul>
             </ilw-header-menu-section>
           </li>
 
