@@ -6,6 +6,11 @@
 //   ## Fast Facts                 -> ### <field> cards (Overview tab)
 //   ## Phenology                  -> ### <field> cards (Phenology tab)
 //   ## Illinois Population Trends  -> ### History prose (Trends tab)
+//   ## References                 -> optional, raw Markdown (References tab).
+//                                     Write as a numbered list; links work
+//                                     ([text](url)) since it's rendered with
+//                                     react-markdown, not the plain-text parser
+//                                     the other sections use.
 
 // Canonical field order. A file that omits one just skips that card; any
 // heading not in this list is ignored, so every species page stays uniform.
@@ -79,12 +84,17 @@ function parseAccount(raw) {
     ? toParagraphs(fastFactsSec.fields[conservationKey])
     : []
 
+  // References stays raw Markdown (not paragraph-collapsed like the other
+  // sections) so a numbered list and [text](url) links render as authored.
+  const references = (sections['References']?.text || []).join('\n').trim()
+
   return {
     description: toParagraphs(sections['Species Description']?.text || []),
     conservationStatus,
     fastFacts: pickFields('Fast Facts', FAST_FACTS),
     phenology: pickFields('Phenology', PHENOLOGY_FACTS),
     history: toParagraphs(historyLines),
+    references,
   }
 }
 

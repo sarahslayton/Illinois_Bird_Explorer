@@ -1,14 +1,18 @@
 import { Link, useParams } from 'react-router-dom'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 import { getSpeciesBySlug, statusModifier } from '../data/species'
 import { getSpeciesAccount } from '../data/speciesAccounts'
 import { getSpeciesPhotos } from '../data/speciesPhotos'
 
 // "Photos" only appears when the species has an additional_photo_info/<slug>.yml sidecar.
+// References sits right before it so Photos never has a gap before it either way.
 const BASE_TABS = [
-  { id: 'overview',  label: 'Overview',                  path: '' },
-  { id: 'phenology', label: 'Phenology',                 path: '/phenology' },
-  { id: 'trends',    label: 'Illinois Population Trends', path: '/trends' },
-  { id: 'photos',    label: 'Photos',                     path: '/photos' },
+  { id: 'overview',    label: 'Overview',                  path: '' },
+  { id: 'phenology',   label: 'Phenology',                 path: '/phenology' },
+  { id: 'trends',      label: 'Illinois Population Trends', path: '/trends' },
+  { id: 'references',  label: 'References',                 path: '/references' },
+  { id: 'photos',      label: 'Photos',                     path: '/photos' },
 ]
 
 function Prose({ paragraphs }) {
@@ -116,6 +120,21 @@ function TrendsPanel({ account }) {
         <Placeholder>Coming soon.</Placeholder>
       </section>
     </>
+  )
+}
+
+function ReferencesPanel({ account }) {
+  return (
+    <section>
+      <h2 className="species-overview__section-heading">References</h2>
+      {account?.references ? (
+        <div className="species-prose content-prose">
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{account.references}</ReactMarkdown>
+        </div>
+      ) : (
+        <Placeholder>References coming soon.</Placeholder>
+      )}
+    </section>
   )
 }
 
@@ -227,6 +246,7 @@ export default function SpeciesDetailPage({ tab }) {
           {tab === 'overview'  && <OverviewPanel species={species} account={account} />}
           {tab === 'phenology' && <PhenologyPanel account={account} />}
           {tab === 'trends'    && <TrendsPanel account={account} />}
+          {tab === 'references' && <ReferencesPanel account={account} />}
           {tab === 'photos'    && <PhotosPanel species={species} photos={photos} />}
         </div>
       </div>

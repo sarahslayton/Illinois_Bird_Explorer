@@ -26,3 +26,23 @@ from 70 to 98 days
 ## Illinois Population Trends
 ### History
 Early accounts indicate that the Bald Eagle occurred along all of the major waterways in Illinois throughout the year (Ridgway 1889) and was a fairly common breeding species in the unsettled parts of the state (Cory 1909). Its population diminished during the early decades of the twentieth century, perhaps due to habitat loss and human persecution. The last known nest during that time was reported from Horseshoe Lake in Alexander County in 1943 (Bellrose 1944). In the 1970s eagles once again attempted nesting in Illinois, close to the Mississippi River at both ends of the state. The first known successful nest in recent times was in Alexander County in 1978, only a short distance from the last known nest. The number of nests increased gradually during the 1980s and accelerated in the 1990s. In 2001 more than half of 50+ nests in Illinois successfully fledged young (Campbell 2002). This success surpassed the U.S. Fish and Wildlife Service’s projected goal of 20 active nests in Illinois by the year 2000 (Grier et al. 1983). Because of increasing populations and successful nesting, the Bald Eagle was upgraded from endangered to threatened status in Illinois in 1999, and then removed from the Illinois List of Threatened and Endangered Species in 2009.
+
+## References
+1. Bellrose, F.C. 1944. Bald Eagles nesting in Illinois. Auk 61:467-468.
+
+2. Campbell, M.F., ed. 2002. Finding Bald Eagles in IIlinois. Illinois Audubon Society, Danville. 54 pp. 
+
+3. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+4. Grier, J.W., J.B. Elder, FJ. Gramlich, N.F Green, J.V. Kussman, J.E. Mathisen, and J.P. Mattsson. 1983. Northern states Bald
+Eagle recovery plan. U.S. Fish and Wildlife Service, Denver. 71 pp. 
+
+5. Nisbet, I.C.T. 1989. Organochlorines, reproductive impairment, and declines in Bald Eagle Haliaeetus leucocephalus
+populations: mechanisms and dose relationships. Pages 483-489 in B.U. Meyburg and R.D. Chancellor, eds. Raptors in the
+modern world. World Working Group for Birds of Prey. Berlin, Germany. 
+
+6. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+
+7. Wiemeyer, S.N., C.M. Burick, and C.J. Stafford. 1993. Environmental contaminants in Bald Eagle eggs—1980—1984—and
+further interpretations of relationships to productivity and shell thickness. Archives of Environmental Contamination and
+Toxicology 24:213-277. 

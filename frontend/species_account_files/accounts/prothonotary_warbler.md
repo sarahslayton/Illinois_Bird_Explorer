@@ -26,3 +26,16 @@ about 11 days
 ## Illinois Population Trends
 ### History
 Cory (1909) stated that the Prothonotary Warbler was a “common summer resident in Illinois south of the Kankakee River and of irregular occurrence” farther north. Ridgway (1889) noted that it was one of the most abundant birds in the southern half of the state where there were swamps bordered by willow trees. In the late 1800s and early 1900s Prothonotaries were considered common and abundant along the Kankakee River (Graber et al. 1983). They were probably more widespread and numerous prior to settlement when natural bottomlands and swamps were more abundant and less fragmented (Graber et al. 1983). The construction of large reservoirs has affected the Prothonotary population on one hand by destroying natural bottomlands and on the other hand by creating new habitat.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., J.W. Graber, and E.L. Kirk. 1983. Illinois birds: Wood Warblers. Illinois Natural History Survey Biological Notes No. 118. Champaign, IL. 144 pp. 
+
+3. Jackson, L.S., C.A. Thompson, and J.J. Dinsmore. 1996. The Iowa breeding bird atlas. Univeristy of Iowa Press, Iowa City. 484 pp. 
+
+4. Kleen, V.M. 1973b. The density and territory size of breeding Prothonotary Warblers (Protonotaria citrea) in southern Illinois. M.A. Thesis, Southern Illinois University, Carbondale. 43 pp. 
+
+5. Petit, L.J. 1999. Prothonotary Warbler (Protonotaria citrea). In A. Poole and F. Gill, eds. The birds of North America, No.408. The Birds of North America, Inc., Philadelphia, PA. 
+
+6. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

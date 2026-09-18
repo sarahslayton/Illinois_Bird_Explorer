@@ -26,3 +26,19 @@ from 10 to 12 days
 ## Illinois Population Trends
 ### History
 Illinois is at the southern edge of the Chestnut-sided Warbler’s breeding range, and it is primarily a migrant in the state. During the late 1800s and early 1900s, the Chestnut-sided Warbler was known to breed in the northern portion of Illinois, but how far south it occurred was not known (Ridgway 1889). It was described as a more or less common summer resident in northern Illinois in the early 1900s (Cory 1909). Although there are early historical breeding records in Missouri around St. Louis (Gault 1892; Graber et al. 1983), their appearance in extreme southern Illinois is either relatively recent or previously undetected. During the Breeding Bird Atlas Project, two small, disjunct populations, one in the northeast and the other at the southern tip of the state, were identified.
+
+## References
+1. Askins, R.A. 2000. Restoring North American birds. Yale University Press, New Haven CT. 320 pp. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Gault, B.F. 1892. The Chestnut-sided Warbler nesting in Missouri. Auk 9(4):396. 
+
+4. Graber, R.R., J.W. Graber, and E.L. Kirk. 1983. Illinois birds: Wood Warblers. Illinois Natural History Survey Biological
+Notes No. 118. Champaign, IL. 144 pp. 
+
+5. Richardson, M., and D.W. Brauning. 1995. Chestnut-sided Warbler (Dendroica pensylvanica). In A. Poole and F. Gill, eds.
+The birds of North America, No. 190. The Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’
+Union, Washington, DC. 
+
+6. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

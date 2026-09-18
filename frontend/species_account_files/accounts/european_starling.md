@@ -26,3 +26,16 @@ from 18 to 21 days
 ## Illinois Population Trends
 ### History
 The first record of European Starlings in Illinois was from Champaign County in the winter of 1922 (Ford 1956). The species spread rapidly in the state, as evidenced by a summer population roughly estimated at 3.1 million in 1957 (Graber and Graber 1963). The European Starling is now one of the most abundant permanent residents in the state.
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Dolbeer, R.A. 1982. Migratory patterns for age and sex classes in blackbirds and starlings. Journal of Field Ornithology
+53:28-46. 
+
+3. Cabe, P.R. 1993. European Starling (Sturnus vulgaris). In A. Poole and F. Gill, eds. The birds of North America, No. 48. The
+Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union, Washington, DC. 
+
+4. Ford, E.R. 1956. Birds of the Chicago region. Chicago Academy of Sciences Special Publication 12. 117 pp. 
+
+5. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.

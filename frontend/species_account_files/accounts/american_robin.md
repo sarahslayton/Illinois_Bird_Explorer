@@ -26,3 +26,17 @@ from 14 to 16 days
 ## Illinois Population Trends
 ### History
 The American Robin was an abundant summer resident in the late 1800s and early 1900s (Ridgway 1889; Cory 1909). The population was estimated at 1.9 million birds in 1909 and 1.5 million in 1957, with a shift in abundance to residential areas (Graber and Graber 1963).
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois
+Natural History Survey Bulletin 28:383-519. 
+
+3. Hickey, J.J., and L.B. Hunt. 1960. Initial songbird mortality following a Dutch Elm disease control program. Journal of
+Wildlife Management 24:259-265. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+
+5. Sallabanks, R., and F.C. James. 1999. American Robin (Turdus migratorius). In A. Poole and F. Gill, eds. The birds of North
+America, No. 462. The Birds of North America, Inc., Philadelphia, PA.

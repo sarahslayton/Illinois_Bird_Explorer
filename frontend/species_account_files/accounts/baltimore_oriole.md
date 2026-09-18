@@ -26,3 +26,14 @@ from 12 to 14 days
 ## Illinois Population Trends
 ### History
 During the late 1800s and early 1900s, the Baltimore Oriole was a common summer resident in Illinois (Cory 1909). Although the Baltimore Oriole was reported throughout the state in the 1907–1909 and 1956–1958 censuses, the data were insufficient for a comparison (Graber and Graber 1963). The Baltimore Oriole breeds widely through the state.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Rising, J.D., and N.J. Flood. 1998. Baltimore Oriole (Icterus galbula). In A. Poole and F. Gill, eds. The birds of North
+America, No. 384. The Birds of North America, Inc., Philadelphia, PA. 
+
+4. Sealy, S.G., and D.L. Neudorf. 1995. Male Northern Orioles eject cowbird eggs: implications for the evolution of ejection
+behavior. Condor 97:76—84. 

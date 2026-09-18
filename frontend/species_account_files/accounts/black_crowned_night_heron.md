@@ -27,3 +27,16 @@ from 42 to 49 days
 ### History
 During the nineteenth century, Black-crowned Night-Herons were a common summer resident in wetlands throughout the state (Nelson 1876; Cory 1909). A serious population decline was first reported near the turn of the century (Widmann 1907) and the species experienced even further declines during the first half of the twentieth century (Graber et al. 1978). The declines were attributed to the ongoing destruction and degradation of breeding and foraging sites, increasing human disturbance, and the use of persistent chemicals (e.g., DDT). Since the breeding population was and continues to be extremely vulnerable, the Black-crowned Night-Heron is listed as an endangered species in Illinois. Currently, only 3 known colonies remain, the largest of which is at the Lincoln Park Zoo in Chicago. There is also a small colony nesting in cattails at Emiquon Nature Preserve, and several pairs nesting within a suburban subdivision in Champaign.
 
+## References
+1. Burger, J.F. 1978. The pattern and mechanism of nesting in mixed-species heronies. Jn A. Sprunt IV, J.C. Ogden, and S.
+Winckler, eds. Wading birds. Research Report No. 7. National Audubon Society, New York. 381 pp. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., J.W. Graber, and E.L. Kirk. 1978. Illinois birds: Ciconiiformes. Illinois Natural History Survey Biological
+Notes No. 109. Champaign, IL. 80 pp. 
+
+4. Nelson, E.W. 1876. Birds of north-eastern Illinois. Essex Institute Bulletin 8:90-155. 
+
+5. Widmann, O. 1907. A preliminary catalog of the birds of Missouri. Academy of Science of St. Louis Transactions 17(1). 288
+Pp. 

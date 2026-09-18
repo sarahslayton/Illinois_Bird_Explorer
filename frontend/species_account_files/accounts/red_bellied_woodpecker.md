@@ -26,3 +26,14 @@ from 24 to 27 days
 ## Illinois Population Trends
 ### History
 During the late 1800s and early 1900s, the Red-bellied Woodpecker was a “rather uncommon resident in northern Illinois . . . but common in southern Illinois” (Cory 1909). During surveys in 1907–1909, the breeding population was mostly limited to the southern zone. In 1956–1958 surveys this species was found throughout the state but the nesting population in the northern zone was still very sparse (Graber and Graber 1963). By 1957–1958 the number of Red-bellied Woodpeckers had greatly increased in the state (Graber and Graber 1963). At the turn of the twenty-first century, they were found statewide during the breeding season.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Jackson, L.S., C.A. Thompson, and J.J. Dinsmore. 1996. The Iowa breeding bird atlas. Univeristy of Iowa Press, Iowa City.
+484 pp. 
+
+4. Shackelford, C.E., R.E. Brown, and R.N. Conner. 2000. Red-bellied Woodpecker (Melanerpes carolinus). In A. Poole and F.
+Gill, eds. The birds of North America, No. 500. The Birds of North America, Inc., Philadelphia, PA. 

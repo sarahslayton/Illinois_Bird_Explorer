@@ -26,3 +26,18 @@ from 15 to 20 days
 ## Illinois Population Trends
 ### History
 The Eastern Bluebird was a very common and well-known species in Illinois, according to early accounts (Ridgway 1889; Cory 1909) and continued as such through the 1950s except for a few winter population crashes. In summer, bluebirds were most abundant in the southern third of the state in the first half of the 1900s (Graber and Graber 1963). The population level in 1957 was half of what it had been in 1909, and after the severe winter of 1958, the bluebird population declined to about one-tenth of its 1909 level (Graber and Graber 1963). In subsequent years the population slowly recovered but setbacks occurred in the late 1970s due to two severe winters (Bohlen 1989; Graber and Graber 1979). Significant population declines during the 1966–1979 period were followed by significant recoveries during 1980–2000. Nest boxes are used by a large percentage of bluebirds in the state (Bohlen 1989) and have significantly contributed to the current level of the bluebird population in Illinois.
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Gowaty, P.A., and J.H. Plissner. 1998. Eastern Bluebird (Sialia sialis). In A. Poole and F. Gill, eds. The birds of North
+America, No. 381. The Birds of North America, Inc., Philadelphia, PA. 
+
+4. Graber, J.W., and R.R. Graber. 1979. Severe winter weather and bird population in southern Illinois. Wilson Bulletin 91:88—103. 
+
+5. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+6. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+

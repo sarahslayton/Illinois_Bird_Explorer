@@ -26,3 +26,13 @@ from 27 to 30 days
 ## Illinois Population Trends
 ### History
 In the 1800s the Red-headed Woodpecker was “decidedly the most numerous member of the family” in the more heavily wooded portions of Illinois (Ridgway 1889). At the turn of the century it was an abundant summer resident and a regular winter resident in southern Illinois (Cory 1909). From the early to mid-1900s the summer population significantly declined, most prominently in the southern third of the state. The decline was attributed to the competition from starlings and loss of savanna habitat (Graber and Graber 1963; Wallace et al. 1961). Populations increased with massive tree die-offs caused by the spread of Dutch elm disease and major flooding.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Wallace, G.J., W.P. Nickell, and R.F. Bernard. 1961. Bird mortality in the Dutch elm disease program. Cranbrook Institute of
+Science Bulletin No. 41, Bloomfield Hills, MI. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

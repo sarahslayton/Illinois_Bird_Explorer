@@ -17,6 +17,8 @@
 //   ## Illinois Population Trends
 //   ### History
 //   <prose>
+//   ## References               (optional)
+//   <numbered list, links ok>
 //
 // What it fixes automatically: missing "##"/"###", "Label: value" on one line,
 // known label synonyms (Incubation -> Incubation Period, Fledging -> Time to Fledge,
@@ -39,6 +41,8 @@ const SECTIONS = {
   'phenology': 'Phenology',
   'illinois history': 'Illinois Population Trends',
   'illinois population trends': 'Illinois Population Trends',
+  'references': 'References',
+  'citations': 'References',
 }
 
 const FAST_FACTS = ['Rangewide Distribution', 'Illinois Abundance', 'Conservation Status', 'Diet', 'Breeding Habitat']
@@ -171,6 +175,13 @@ function normalize(raw) {
   out.push('## Illinois Population Trends')
   out.push('### History')
   out.push(...trimBlank(trendsBody.length ? trendsBody : ['']))
+
+  // Optional — only emitted when the file has one, no warning if it doesn't.
+  if (sec['References']) {
+    out.push('')
+    out.push('## References')
+    out.push(...trimBlank(sec['References']))
+  }
 
   const text = out.join('\n').replace(/\n{3,}/g, '\n\n').replace(/\s+$/, '') + '\n'
   return { text, warnings, notes, sectionsFound }

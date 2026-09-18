@@ -26,3 +26,12 @@ from 12 to 14 days
 ## Illinois Population Trends
 ### History
 The Carolina Wren, which is the largest of the five wren species that breed in Illinois, was considered abundant in southern Illinois and uncommon in the northern part of the state during the late 1800s and early 1900s (Cory 1909). Weather plays an important role in the status of Carolina Wren populations in the state. In recent times notable population declines occurred during the severe winters of 1966–1970 and 1977–1978; however, the population recovered after these periods. The Carolina Wren has always been more common and widespread in southern Illinois than northern Illinois. The range of this species has been expanding northward up the river valleys, but it is still sparsely distributed in the northern half of the state.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Haggerty, T.M., and S.E. Morton. 1995. Carolina Wren (Thryothorus ludovicianus). In A. Poole and F. Gill, eds. The birds of
+North America, No. 188. The Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union,
+Washington, DC. 
+
+3. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

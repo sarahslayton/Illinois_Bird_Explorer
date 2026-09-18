@@ -26,3 +26,15 @@ from 20 to 25 days
 ## Illinois Population Trends
 ### History
 The Downy Woodpecker has always been described as a common permanent resident throughout the state (Cory 1909; Smith and Parmalee 1955; Bohlen 1989; Graber and Graber 1963). In the mid-1900s most of the population was found in the central and southern parts of the state and the Downy was about four times as common as the Hairy Woodpecker (Graber and Graber 1963). On the 2000 Spring Bird Count the ratio was about five to one (Kleen 2000b). They most likely breed statewide.
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+4. Kleen, V.M. 2000b. The 2000 Illinois statewide spring bird count. Illinois Audubon 273:14a—14h. 
+
+5. Smith, H.R., and P.W. Parmalee. 1955. A distributional checklist of the birds of Illinois. Illinois State Museum Popular
+Science Series 4. 62 pp. 

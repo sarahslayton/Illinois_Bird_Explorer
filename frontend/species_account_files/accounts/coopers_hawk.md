@@ -26,3 +26,19 @@ from 27 to 34 days
 ## Illinois Population Trends
 ### History
 More than a century ago the Cooper’s Hawk was considered to be a common summer resident of all wooded portions of the state (Ridgway 1889; Cory 1909). During the first half of the twentieth century, it was reported as fairly common (Ford 1956). It is not known if or how much the population declined during these earlier years, which would have included persecution from farmers for attacks on chickens. At the time that the Cooper’s Hawk was listed as an endangered species in Illinois in 1977, the breeding population was very low (Herkert 1992). During the 1980s and 1990s, the population rebounded, not yet to its former numbers, but sufficiently enough to be delisted in 1999. Cooper’s Hawks are now regularly found year-round at residential bird feeders.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Ford, E.R. 1956. Birds of the Chicago region. Chicago Academy of Sciences Special Publication 12. 117 pp. 
+
+3. Herkert, J.R. 1992. Endangered and threatened species of Illinois: status and distribution. Volume 2: animals. Illinois Endangered Species Protection Board, Springfield. 142 pp.
+
+4. Jackson, L.S., C.A. Thompson, and J.J. Dinsmore. 1996. The Iowa breeding bird atlas. Univeristy of Iowa Press, Iowa City.
+484 pp. 
+
+5. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+
+6. Rosenfield, R.N., and J. Bielefeldt. 1993. Cooper’s Hawk (Accipiter cooperi1). In A. Poole and F. Gill, eds. The birds of
+North America, No. 75. The Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union,
+Washington, DC. 

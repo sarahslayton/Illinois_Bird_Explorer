@@ -25,4 +25,14 @@ from 25 to 28 days
 
 ## Illinois Population Trends
 ### History
-The Northern Flicker (the Yellow-shafted is the form that occurs in Illinois) was historically a common to abundant summer resident throughout Illinois (Ridgway 1889; Cory 1909). A significant decline in population occurred in the first half of the 1900s (Graber and Graber 1963). The suspected causes were conversion of savannas, open fields, and grasslands to row crops, loss of isolated nesting trees, and the invasion of the European Starling beginning in the 1930s. The breeding population was considerably higher in the north in the early and mid-1900s (Graber and Graber 1963).
+The Northern Flicker was historically a common to abundant summer resident throughout Illinois (Ridgway 1889; Cory 1909). A significant decline in population occurred in the first half of the 1900s (Graber and Graber 1963). The suspected causes were conversion of savannas, open fields, and grasslands to row crops, loss of isolated nesting trees, and the invasion of the European Starling beginning in the 1930s. The breeding population was considerably higher in the north in the early and mid-1900s (Graber and Graber 1963).
+
+## References
+1. American Ornithologists’ Union. 1973. Thirty-second supplement to the American Ornithologists’ Union check-list of North
+American birds. Auk 90:411-419. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

@@ -26,3 +26,13 @@ from 21 to 28 days
 ## Illinois Population Trends
 ### History
 During the 1800s and early 1900s, the Black Tern was considered an abundant summer resident on the inland lakes and marshes of northeastern Illinois (Nelson 1876; Cory 1909) and remained a common summer resident in the Chicago region through the first half of the twentieth century (Ford 1956). With the draining, filling, and other modifications of wetlands, available nesting habitat has been greatly reduced. Black Terns continue to nest in isolated and well-protected marshes, especially in northwestern Lake County, but the small population and diminished availability of suitable wetland habitat prompted the listing of the Black Tern as an endangered species in Illinois.
+
+## References
+1. Brown, M., and J.J. Dinsmore. 1986. Implication of marsh size and isolation for marsh bird management. Journal of Wildlife
+Management 50:392-397. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Nelson, E.W. 1876. Birds of north-eastern Illinois. Essex Institute Bulletin 8:90-155. 
+
+4. Ford, E.R. 1956. Birds of the Chicago region. Chicago Academy of Sciences Special Publication 12. 117 pp. 

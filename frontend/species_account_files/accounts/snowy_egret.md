@@ -5,7 +5,7 @@ The Snowy Egret is an entirely white bird with bright yellow feet known for its 
 ### Rangewide Distribution:
 nearly all of the U.S. south of Canada, south through most of South America
 ### Illinois Abundance:
-a rare migrant and very local summer resident (in the Madison and St. Clair counties area, where it is becoming more common); post-breeding wanderer
+a rare migrant and very local summer resident; post-breeding wanderer
 ### Conservation Status:
 Illinois Endangered Species List, Illinois Species of Greatest Conservation Need
 ### Diet:

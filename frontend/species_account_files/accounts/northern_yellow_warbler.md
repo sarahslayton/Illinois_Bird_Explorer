@@ -26,3 +26,14 @@ from 9 to 12 days
 ## Illinois Population Trends
 ### History
 In the late 1800s and early 1900s the Northern Yellow Warbler was “one of the most abundant of our summer birds” (Ridgway 1889) and a very common summer resident (Cory 1909). It was still considered a common summer resident in the mid-1900s (Smith and Parmalee 1955). A major population decline was noted beginning in the early 1900s. Graber et al. (1983) compared data from the same area for three time periods (1904–1910, 1957–1969, and 1979–1980) and found a consistent decline in abundance. Counts in the latter period were down 94% from 1904–1910 levels. However, Graber et al. (1983) believed that the Yellow Warbler should occur as a breeding species in every Illinois township. Cowbird parasitism has been suggested as a cause of the decline; parasitism rates increased after 1900 (from 6% prior to 1900 to 40% after 1900; Graber et al. 1983). During the Breeding Bird Atlas Project, Northern Yellow Warblers were most frequently reported from in the north and less so in the east-central and south-central portions of the state.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., J.W. Graber, and E.L. Kirk. 1983. Illinois birds: Wood Warblers. Illinois Natural History Survey Biological
+Notes No. 118. Champaign, IL. 144 pp. 
+
+3. Smith, H.R., and P.W. Parmalee. 1955. A distributional checklist of the birds of Illinois. Illinois State Museum Popular
+Science Series 4. 62 pp. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

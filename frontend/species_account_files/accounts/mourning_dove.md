@@ -26,3 +26,12 @@ from 12 to 14 days
 ## Illinois Population Trends
 ### History
 During the late 1800s, the Mourning Dove was considered a common summer resident in northern Illinois and a common permanent resident in southern Illinois (Cory 1909). During the 1907–1909 and 1956–1958 censuses, Graber and Graber (1963) reported that the population levels were similar in 1909 and 1957, and, with some variability, the population was higher in the southern zone in the summer during both censuses. The northern population becomes decidedly smaller during the winter months. Mourning Doves are a popular game bird in Illinois.
+
+## References 
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Mirarchi, R.E., and T.S. Baskett. 1994. Mourning Dove (Zenaida macroura). In A. Poole and F. Gill, eds. The birds of North
+America, No. 117. The Academy of Natural Sciences, Philadelphia, and The American Ornithologists’ Union, Washington,
+DC. 

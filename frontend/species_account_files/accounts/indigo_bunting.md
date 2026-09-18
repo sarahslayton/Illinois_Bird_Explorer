@@ -26,3 +26,13 @@ from 9 to 10 days
 ## Illinois Population Trends
 ### History
 During the late 1800s, the Indigo Bunting was described as “one of our most abundant and most generally distributed summer residents” (Ridgway 1889). Graber and Graber (1963) state that the Indigo Bunting was found statewide in the summer in the 1907–1909 and 1956–1958 censuses and the population was more abundant and had the highest densities in the south. The number of Indigo Buntings in Illinois increased slightly between 1909 and 1957 (Graber and Graber 1963). During the 1957–1958 censuses, they were found in nearly every habitat type, but especially in woody areas; the highest population densities were in edge shrubs, with up to 295 birds per 100 acres, along drainage ditches, and in hedgerows in the south. This species was probably not abundant prior to Euro-American settlement (Graber and Graber 1963).
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Payne, R.B. 1992. Indigo Bunting. /n A. Poole, P. Stettehmeim, and G. Gill, eds. The birds of North America, No. 4. The
+‘Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union, Washington, DC. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp. 

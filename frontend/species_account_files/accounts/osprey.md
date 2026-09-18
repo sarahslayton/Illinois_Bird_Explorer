@@ -26,3 +26,22 @@ from 48 to 59 days
 ## Illinois Population Trends
 ### History
 During the 1800s, the Osprey was described as an uncommon and widespread summer resident along the major river valleys and in the northeastern wetlands (Ridgway 1889; Cory 1909); only a few actual nestings were reported. Breeding Ospreys gradually disappeared in the first half of the 1900s, with the last known nesting in the state at Crab Orchard National Wildlife Refuge in Williamson County in 1952 (Bennett 1957). Ospreys continued passing through Illinois as migrants during these years, occasionally lingering a few days at favorable locales. As a result of the population decline, the Osprey is listed as an endangered species in Illinois. After being present for several years as nonbreeding summer residents, Ospreys recently became reestablished as a successful breeding species in Illinois. The first known nesting attempts were in southern Cook County in 1996 and 1997, but they were not successful until 1998 (Thayer 1999); this nest has continued to be successful through 2001 (Kleen 2000a, 2001c, 2002a). In 2001 another pair successfully nested in Massac County, possibly the result of an expansion from a more southern population (Kleen 2002a).
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Bennett, E. 1957. Nesting birds of the shoreline and islands of Crab Orchard Lake, Illinois. Transactions of the Illinois State
+Academy of Science 50:259-64. 
+
+3. Kleen, V.M. 2000a. Field notes: the 1999 breeding season report. Meadowlark 9(1):25—40. 
+
+4. Kleen, V.M. 2001c. Field notes: the 2000 breeding season report. Meadowlark 10(1):24—40. 
+
+5. Kleen, V.M. 2002a. Field notes: the 2001 breeding season report. Meadowlark 11(1):26—40. 
+
+6. Poole, A.F., R.O. Bierregaard, and M.S. Martell. 2002. Osprey (Pandion haliaetus). In A. Poole and F. Gill, eds. The birds of
+North America, No. 683. The Birds of North America, Inc., Philadelphia, PA. 
+
+7. Thayer, C. 1999. Illinois’ second confirmed breeding of Osprey. Meadowlark 8(1):6—7. 
+
+8. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

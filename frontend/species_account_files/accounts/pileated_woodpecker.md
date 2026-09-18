@@ -26,3 +26,15 @@ from 26 to 28 days
 ## Illinois Population Trends
 ### History
 During the late 1800s and early 1900s, the Pileated Woodpecker occurred in wooded areas throughout Illinois and was abundant in the more heavily timbered areas (Ridgway 1889). According to Cory (1909) it occurred sparingly in the wooded areas of northern Illinois. A major decline in the Pileated’s population occurred in the late 1800s and early 1900s, probably in response to widespread deforestation in the state. In the mid-1900s the population expanded up the major river valleys from the south (Graber et al. 1977). Although probably not as abundant as it once was, the Pileated Woodpecker now occupies most of its former Illinois range (Graber et al. 1977). During the Breeding Bird Atlas project, the Pileated Woodpecker was found in the large, mature, floodplain forests and corridors along the Mississippi, Illinois, Kaskaskia, and Ohio rivers and their tributaries, the Wabash River drainage up to Vermilion County, and in the southern counties.
+
+## References
+1. Bull, E.L., and J.E. Jackson. 1995. Pileated Woodpecker (Dryocopus pileatus). In A. Poole and F. Gill, eds. The birds of
+North America, No. 148. The Academy of Natural Sciences, Philadelphia, PA, and The American Ornithological Union,
+Washington, DC. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., J.W. Graber, and E.L. Kirk. 1977. Illinois birds: Picidae. Illinois Natural History Survey Biological Notes No.102. Champaign, IL. 73 pp.
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+

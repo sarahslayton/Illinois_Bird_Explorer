@@ -26,3 +26,9 @@ about 34–35 days
 ## Illinois Population Trends
 ### History
 Green Herons were probably much more common a century ago, prior to the large-scale loss of wetlands, than they are now. At the end of the nineteenth century, a population decline may have occurred (Barnes 1890). Graber et al. (1978) estimated another 80% decline during the 49-year span between surveys conducted during 1907–1909 and 1956–1958. During the Breeding Bird Atlas Project, Green Heron were widespread throughout the state.
+
+## References
+1. Barnes, R.M. 1890. List of birds breeding in Marshall Co., Ill. Ornithologist and Oologist 15(1):10. 
+
+2. Graber, R.R., J.W. Graber, and E.L. Kirk. 1978. Illinois birds: Ciconiiformes. Illinois Natural History Survey Biological
+Notes No. 109. Champaign, IL. 80 pp. 

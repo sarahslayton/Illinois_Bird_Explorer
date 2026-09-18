@@ -26,3 +26,16 @@ about 9 days
 ## Illinois Population Trends
 ### History
 The American Redstart was described by Cory (1909) as an abundant summer resident in Illinois. However, Ridgway (1889) indicated that it was “by no means a well known bird to the general observer.”  Although there are no definitive population data for Illinois to which comparisons can be made, Graber et al. (1983) believed that in recent years the population in Illinois had surely decreased due to loss of riparian forest habitat. During the Breeding Bird Atlas Project, American Redstarts occurred throughout the state, but most notably along major river corridors (especially the Mississippi, Illinois, and Kaskaskia), the northwestern and northeastern parts of the state, and the southern bottomlands.
+
+## References
+
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series
+9:1-766. 
+
+2. Graber, R.R., J.W. Graber, and E.L. Kirk. 1983. Illinois birds: Wood Warblers. Illinois Natural History Survey Biological
+Notes No. 118. Champaign, IL. 144 pp.
+
+3. Holmes, R.T., and T.W. Sherry. 2001. Thirty-year bird population trends in an unfragmented temperate deciduous forest:
+importance of habitat change. Auk 118:589-609. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp. 

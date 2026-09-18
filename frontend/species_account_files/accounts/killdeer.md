@@ -26,3 +26,14 @@ about 25 days
 ## Illinois Population Trends
 ### History
 During the late 1800s and early 1900s, the Killdeer was a common and well-known summer resident throughout the state (Ridgway 1895; Cory 1909) and continues to be so. Census data indicated increased densities in the north in 1957 compared to 1909 (Graber and Graber 1963). Killdeer are found statewide, but the number of Killdeer in the state varies from year to year, perhaps influenced by the effects of weather extremes on their relatively exposed nests during the April to June nesting season (Graber and Graber 1963).
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Jackson, B.J.S., and J.A. Jackson. 2000. Killdeer (Charadrius vociferous). In A. Poole and F. Gill, eds. The birds of North
+America, No. 517. The Birds of North America, Inc., Philadelphia, PA. 
+
+4. Ridgway, R. 1895. The ornithology of Illinois. Vol. 2. Illinois State Laboratory of Natural History. 202 pp. 
+

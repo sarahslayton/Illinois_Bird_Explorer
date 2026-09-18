@@ -26,3 +26,14 @@ from 26 to 31 days
 ## Illinois Population Trends
 ### History
 By the time the earliest observations were recorded in Illinois, the Purple Martin was a common summer resident (Cory 1909). Purple Martins had adapted to urbanized habitats long before 1900, and almost exclusively preferred residential habitats in the 1950s (Graber and Graber 1963) and Graber et al. (1972) suggested that Purple Martins probably nested in every Illinois township in the 1950s and 1960s. Their current distribution across Illinois is wide, but patchy.
+
+## References
+1. Brown, C.R. 1997. Purple Martin (Progne subis). In A. Poole and F, Gill, eds. The birds of North America, No. 287. The
+Academy of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union, Washington, DC. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+4. Graber, R.R., J.W. Graber, and E.L. Kirk. 1972. Illinois birds: Hirundinidae. Illinois Natural History Survey Biological Notes
+No. 80. Champaign, IL. 36 pp. 

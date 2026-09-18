@@ -26,3 +26,16 @@ about 21 days
 ## Illinois Population Trends
 ### History
 The Common Nighthawk has historically been a common summer resident throughout the state (Cory 1909; Smith and Parmalee 1955). At present, it is most frequently encountered in cities and towns where insects the lights attract flying insects and flat, gravel-topped roofs provide nesting habitat. Armstrong (1965) and Wedgwood (1973) suggest that the density of flat roofs is an important factor in selection of urban home ranges.
+
+## References
+1. Armstrong, J.T. 1965. Breeding home range in nighthawk and other birds; its evolutionary and ecological significance.
+Ecology 46:619-629. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Gross, A.O. 1940. Eastern Nighthawk. /n A.C. Bent, ed. Life histories of North American cuckoos, goatsuckers, hummingbirds, and their allies. U.S. National Museum Bulletin 176:206—234. 
+
+4. Smith, H.R., and P.W. Parmalee. 1955. A distributional checklist of the birds of Illinois. Illinois State Museum Popular
+Science Series 4. 62 pp. 
+
+5. Wedgwood, J.A. 1973. Nighthawks in the city. Blue Jay 31:82-88. 

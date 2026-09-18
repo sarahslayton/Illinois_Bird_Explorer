@@ -26,3 +26,17 @@ from 24 to 30 days
 ## Illinois Population Trends
 ### History
 Nineteenth and early twentieth century accounts of Hairy Woodpeckers in Illinois refer to them as common permanent residents (Ridgway 1889; Cory 1909). However, Barnes (1912) suggested the population was declining. Graber et al. (1977) believed that the Hairy Woodpecker population was certainly declining during the late 1950s through early 1970s. The Hairy Woodpecker population is currently estimated to be about one-fifth the size of the Downy population (Kleen 2000b).
+
+## References
+1. Barnes, R.M. 1912. Breeding birds of Marshall Co., II. Oologist 29(8):325-328. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., J.W. Graber, and E.L. Kirk. 1977. Illinois birds: Picidae. Illinois Natural History Survey Biological Notes No. 102. Champaign, IL. 73 pp. 
+
+4. Kleen, V.M. 2000b. The 2000 Illinois statewide spring bird count. Illinois Audubon 273:14a—14h. 
+
+5. Jackson, J.A., H.R. Ouellet, and B.J.S. Jackson. 2002. Hairy Woodpecker (Picoides villosus). In A. Poole and F. Gill, eds.
+The birds of North America, No. 702. The Birds of North America, Inc., Philadelphia, PA. 
+
+6. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

@@ -26,3 +26,13 @@ about 10 days
 ## Illinois Population Trends
 ### History
 In the late 1800s and early 1900s the Common Yellowthroat was “one of the most conspicuous members of the [warbler] family … being both abundant and familiar” (Ridgway 1889) and a very common summer resident in Illinois (Cory 1909). Population size and distribution remained unchanged from 1909 to 1957 and most of the population occurred in the southern part of the state in the early to mid-1900s (Graber and Graber 1963). The Common Yellowthroat is the most conspicuous, widespread, and common warbler that breeds in Illinois (Graber and Graber 1963). This species probably breeds in every county (Graber et al. 1983).
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Graber, R.R., J.W. Graber, and E.L. Kirk. 1983. Illinois birds: Wood Warblers. Illinois Natural History Survey Biological
+Notes No. 118. Champaign, IL. 144 pp. 
+
+4. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

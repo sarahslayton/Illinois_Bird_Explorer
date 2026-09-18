@@ -26,3 +26,16 @@ from 14 to 18 days
 ## Illinois Population Trends
 ### History
 The Eastern Wood-Pewee, historically and presently, is a common summer resident (Ridgway 1889; Cory 1909; Graber et al. 1974; Bohlen 1989). The Eastern Wood-Pewee in Illinois is probably as common statewide now as a century or so ago.
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+3. Graber, R.R., J.W. Graber, and E.L. Kirk. 1974. Illinois birds: Tyrannidae. Illinois Natural History Survey Biological Notes
+No. 86. Champaign, IL. 56 pp. 
+
+4. McCarty, J.P. 1996. Eastern Wood-Pewee. /n A. Poole and F. Gill, eds. The birds of North America, No. 245. The Academy
+of Natural Sciences, Philadelphia, PA, and The American Ornithologists’ Union, Washington, DC. 
+
+5. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

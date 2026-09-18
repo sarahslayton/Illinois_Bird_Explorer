@@ -29,6 +29,7 @@ function AppLayout() {
           <Route path="/bird-species/:slug"           element={<SpeciesDetailPage tab="overview" />} />
           <Route path="/bird-species/:slug/phenology" element={<SpeciesDetailPage tab="phenology" />} />
           <Route path="/bird-species/:slug/trends"    element={<SpeciesDetailPage tab="trends" />} />
+          <Route path="/bird-species/:slug/references" element={<SpeciesDetailPage tab="references" />} />
           <Route path="/bird-species/:slug/photos"    element={<SpeciesDetailPage tab="photos" />} />
 
           {/* Written-content sections — one Markdown file per page in written_content/<section>/ */}

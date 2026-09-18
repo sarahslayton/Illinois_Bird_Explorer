@@ -1,6 +1,6 @@
 ---
 title: Illinois Natural Heritage Database
-placeholder: true
+placeholder: false
 resources:
   - label: Illinois DNR — Natural Heritage Database
     url: https://naturalheritage.illinois.gov/dataresearch.html

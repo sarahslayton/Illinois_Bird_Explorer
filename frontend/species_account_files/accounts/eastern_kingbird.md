@@ -26,3 +26,10 @@ from 16 to 18 days
 ## Illinois Population Trends
 ### History
 During the late 1800s and early 1900s, the Eastern Kingbird was a very common bird throughout the state (Ridgway 1889; Cory 1909). The Eastern Kingbird population in 1957 was about half the level of 1909, especially in the south; this decline was attributed to the loss of habitat, especially pastures, orchards, and hedgerows, and the use of pesticides (Graber and Graber 1963). However, the species was found in every county in Illinois during the Breeding Bird Atlas.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Graber, R.R., and J.W. Graber. 1963. A comparative study of bird populations in Illinois, 1906-1909 and 1956-1958. Illinois Natural History Survey Bulletin 28:383-519.
+
+3. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.

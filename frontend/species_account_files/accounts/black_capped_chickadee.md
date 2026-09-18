@@ -26,3 +26,11 @@ from 14 to 18 days
 ## Illinois Population Trends
 ### History
 In the 1800s and early 1900s the Black-capped Chickadee was considered a common permanent resident in the north and a very rare and irregular visitor in the south when winters are particularly cold (Ridgway 1889; Cory 1909). The status of the Black-capped Chickadee is nearly the same today, where the occur in the northern, central, and western portions of the state. Hybrids of Black-capped and Carolina chickadees have been known to occur where their ranges meet.
+
+## References
+1. Cory, C.B. 1909. The birds of Illinois and Wisconsin. Field Museum of Natural History Publication 131, Zoological Series 9:1-766.
+
+2. Ridgway, R. 1889. The ornithology of Illinois. Vol. 1. Illinois State Laboratory of Natural History. 520 pp.
+
+3. Smith, S.M. 1993. Black-capped Chickadee. Jn A. Poole, P. Stettenheim, and F. Gill, eds. The birds of North America, No.39.
+The Academy of Natural Sciences, Philladelphia, PA, and The American Ornithologists’ Union, Washington, DC. 

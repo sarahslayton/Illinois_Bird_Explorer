@@ -26,3 +26,13 @@ from 14 to 15 days
 ## Illinois Population Trends
 ### History
 Pine Siskins regularly breed as far south as Minnesota and Wisconsin but breeding attempts in Illinois are apparently recent. Early accounts of the Pine Siskin in Illinois are non-existent. Chapel (1984) provided a detailed chronology of Pine Siskin nests in Illinois, the first of which occurred in McLean County in 1973. Between 1976 and 1981 four more nesting attempts were made and two of those resulted in successfully fledged young. In 1982 a number of breeding attempts were reported, including eight in Urbana (Champaign County) and four at widely scattered locations in northern Illinois; about half of these nests were successful. Pine Siskin continues to be a rare and sporadic breeding species in Illinois. Most, if not all, Illinois nests have been found in conifers.
+
+## References
+1. Bohlen, H.D. 1989. The birds of Illinois. Indiana University Press, Bloomington. 221 pp. 
+
+2. Chapel, R.C. 1984. Illinois’ breeding Pine Siskins. Illinois Audubon Bulletin 207:46—-48. 
+
+3. Dawson, W.R. 1997. Pine Siskin (Carduelis pinus). In A. Poole and F. Gill, eds. The birds of North America, No. 280. The
+Academy of Natural Sciences, Philadelphia, PA, and the American Ornithologists’ Union, Washington, DC. 
+
+4. Weaver, R.L., and FH. West. 1943. Notes on the breeding of the Pine Siskin. Auk 60:492-504. 

@@ -17,7 +17,7 @@ features:
   - path: /migration
     label: Migration
     heading: Track Seasonal Movements
-    desc: learn about ongoing research programs focused on advancing our understanding of how birds move across North America each spring and fall. 
+    desc: Learn about ongoing research programs focused on advancing our understanding of how birds move across North America each spring and fall. 
   - path: /monitoring
     label: Monitoring Programs
     heading: Community Science in Action
